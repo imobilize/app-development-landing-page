@@ -54,7 +54,6 @@ export default function WizardFormFirstPage(props) {
                     <Input type="radio" value="Don't Know" name="value" />
                 </label>
                 <br />
-
                 <label>
                     100-1000
                     <Input type="radio" value="100-1000" name="value" />
