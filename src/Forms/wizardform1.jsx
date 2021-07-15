@@ -24,19 +24,21 @@ export default function WizardFormFirstPage(props) {
                 <label for="project_Details">
                     Tell us about your project
                 </label>
-                <Input type="text" name="project_Details" placeholder="Tell us about your project" />
+                <Input type="text" name="project_Details" />
                 <br />
                 <label for="phone">
                     Contact number
                 </label>
-                <Input type="tel" name="phone" placeholder="Phone*" />
+                <Input type="tel" name="phone" />
                 <br />
                 <label for="email">
                     Email*
                 </label>
-                <Input type="email" required={true} name="email" placeholder="Email*" />
+                <Input type="email" required={true} name="email" />
                 <br />
-                <label for="company_Size">How big is your company?* </label>
+                <label for="company_Size">
+                    How big is your company?*
+                </label>
                 <Select type="select" required={true} name="company_Size">
                     <option value="" disabled selected hidden>Please Select</option>
                     <option value="Individual">Individual</option>
@@ -45,15 +47,34 @@ export default function WizardFormFirstPage(props) {
                     <option value="100+">100+</option>
                 </Select>
                 <br />
-                <Input type="radio" value="100" name="value" />
+                <label for="company_Size">Within a budget of </label>
+                <br />
+                <label>
+                    Don't Know
+                    <Input type="radio" value="Don't Know" name="value" />
+                </label>
+                <br />
 
-
-
-
-
-
-
-
+                <label>
+                    100-1000
+                    <Input type="radio" value="100-1000" name="value" />
+                </label>
+                <br />
+                <label>
+                    1000-5000
+                    <Input type="radio" value="1000-5000" name="value" />
+                </label>
+                <br />
+                <label>
+                    5000-15000
+                    <Input type="radio" value="5000-15000" name="value" />
+                </label>
+                <br />
+                <label>
+                    20k+
+                    <Input type="radio" value="20k+" name="value" />
+                </label>
+                <br />
                 <button type="submit">Next Page</button>
             </Form>
             <p>
