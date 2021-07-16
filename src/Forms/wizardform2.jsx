@@ -18,8 +18,8 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                 <label htmlFor="IOS">IOS</label>
                 <Input type="checkbox" name="IOS" />
                 <br />
-                <label htmlFor="Andriod">Andriod</label>
-                <Input type="checkbox" name="Andriod" />
+                <label htmlFor="Android">Android</label>
+                <Input type="checkbox" name="Android" />
                 <br />
                 <label htmlFor="Kotlin">Kotlin</label>
                 <Input type="checkbox" name="Kotlin" />
@@ -86,7 +86,7 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                 <Input type="checkbox" name="Scale" />
                 <br />
                 <label htmlFor="more_sales">Driving more sales</label>
-                <Input type="checkbox" name="Driving more sales" />
+                <Input type="checkbox" name="more_sales" />
                 <br />
                 <label htmlFor="Cutting_costs">Cutting costs</label>
                 <Input type="checkbox" name="Cutting_costs" />
