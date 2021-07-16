@@ -47,7 +47,7 @@ export default function WizardFormFirstPage(props) {
                     <option value="100+">100+</option>
                 </Select>
                 <br />
-                <label for="company_Size">Within a budget of </label>
+                <label for="value">Within a budget of </label>
                 <br />
                 <label>
                     Don't Know
