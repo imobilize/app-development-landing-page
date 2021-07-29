@@ -1,0 +1,49 @@
+.form-label {
+    font-weight: 500;
+    span {
+        color: red;
+        font-weight: 400;
+    }
+}
+
+.project-details {
+    height: 100px;
+    
+}
+
+.budget-btn {
+    width: 10px;
+
+    &:hover{
+        background-color: rgb(0, 81, 255);
+
+    }
+}
+
+::-moz-selection {
+    color: white;
+    background: black;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
+
+.radio {
+    visibility: hidden;
+}
+
+.hr-height{
+    height: 3px;
+    color: rgb(17, 17, 105);
+    opacity: 1;
+    width: 50%;
+    position: relative;
+    left: 20px;
+}
+
+.checkbox-padding{
+    position: relative;
+    margin-left: 10px;
+}
