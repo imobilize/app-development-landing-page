@@ -71,25 +71,25 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
 
 
     return (
-        <Form name="page2" {...props}>
+        <Form className="form-control" name="page2" {...props}>
             <h1>Tell us more about your business needs</h1>
 
             <h2>What are the main challenges you’re facing right now?– Required field</h2>
             <div>
                 <label htmlFor="validate_product">Validating my product idea</label>
-                <Input type="checkbox" name="validate_product" />
+                <Input type="checkbox" className="form-check-input" name="validate_product" />
                 <br />
                 <label htmlFor="MVP">Creating an MVP</label>
-                <Input type="checkbox" name="MVP" />
+                <Input type="checkbox" className="form-check-input" name="MVP" />
                 <br />
                 <label htmlFor="Scale">Scale an existing product</label>
-                <Input type="checkbox" name="Scale" />
+                <Input type="checkbox" className="form-check-input" name="Scale" />
                 <br />
                 <label htmlFor="more_sales">Driving more sales</label>
-                <Input type="checkbox" name="more_sales" />
+                <Input type="checkbox" className="form-check-input" name="more_sales" />
                 <br />
                 <label htmlFor="Cutting_costs">Cutting costs</label>
-                <Input type="checkbox" name="Cutting_costs" />
+                <Input type="checkbox" className="form-check-input" name="Cutting_costs" />
 
                 <br />
             </div>
