@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Form, Input } from "usetheform";
+import "../styles/main.scss"
+
 
 export default function WizardFormSecondPage({ prevPage, ...props }) {
     let [hide, setHide] = useState(false);
-
     const operation = (e) => {
         setHide(true)
     }
@@ -12,159 +13,284 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
     }
 
 
+
     const showBoxes = () => {
         return (
             <div className="container">
-                <div className="row">
-                    <div className="col-sm-3">
-                    <label htmlFor="IOS">IOS</label>
-                <Input type="checkbox" name="IOS" />
+                <ul>
+                    <div className="row">
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="IOS" />
+                                    <div className="checkbox-padding">
+                                        <label>IOS</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Android" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Android">Android</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="React Native" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="React Native">React Native</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Kotlin" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Kotlin">Kotlin</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
                     </div>
-                    <div className="col-sm-3">
-                    <label htmlFor="Android">Android</label>
-                <Input type="checkbox" name="Android" />
-                    </div>
-                    <div className="col-sm-3">
-                    <label htmlFor="Kotlin">Kotlin</label>
-                <Input type="checkbox" name="Kotlin" /> 
-                    </div>
-                    <div className="col-sm-3">
-                    <label htmlFor="React Native">React Native</label>
-                <Input type="checkbox" name="React Native" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-3">
-                    <label htmlFor="Flutter">Flutter</label>
-                <Input type="checkbox" name="Flutter" />
-                    </div>
-                    <div className="col-sm-3">
-                    <label htmlFor="React">React</label>
-                <Input type="checkbox" name="React" />  
-                    </div>
-                    <div className="col-sm-3">
-                    <label htmlFor="Angular">Angular</label>
-                <Input type="checkbox" name="Angular" />  
-                    </div>
-                    <div className="col-sm-3">
-                        
-                    </div>
-                </div>
-                {/* <div className="row">
-                    <div className="col-sm-3">
+                </ul>
 
+                <ul>
+                    <div className="row">
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Vue" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Vue">Vue</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Angular" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Angular">Angular</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="React" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="React">React</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Flutter" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Flutter">Flutter</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
                     </div>
-                    <div className="col-sm-3">
-                        
+                </ul>
+
+                <ul>
+                    <div className="row">
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Ruby" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Ruby">Ruby</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Node" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Node">Node</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Java" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Java">Java</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" className="form-check-input" name="PHP" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="PHP">PHP</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
                     </div>
-                    <div className="col-sm-3">
-                        
+                </ul>
+
+                <ul>
+                    <div className="row">
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Salesforce Development" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Salesforce Development">Salesforce Development</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Devops" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Devops">Devops</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Quality Assurance" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Quality Assurance">Quality Assurance</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Other" />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Other">Other</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
                     </div>
-                    <div className="col-sm-3">
-                        
-                    </div>
-                </div> */}
-                
-                {/* <label htmlFor="React Native">React Native</label>
-                <Input type="checkbox" name="React Native" />
-                <br />
-                <label htmlFor="Flutter">Flutter</label>
-                <Input type="checkbox" name="Flutter" />
-                <br />
-                <label htmlFor="React">React</label>
-                <Input type="checkbox" name="React" />
-                <br />
-                <label htmlFor="Angular">Angular</label>
-                <Input type="checkbox" name="Angular" />
-                <br />
-                <label htmlFor="Vue">Vue</label>
-                <Input type="checkbox" name="Vue" />
-                <br />
-                <label htmlFor="Ruby">Ruby</label>
-                <Input type="checkbox" name="Ruby" />
-                <br />
-                <label htmlFor="Node">Node</label>
-                <Input type="checkbox" name="Node" />
-                <br />
-                <label htmlFor="Java">Java</label>
-                <Input type="checkbox" name="Java" />
-                <br />
-                <label htmlFor="PHP">PHP</label>
-                <Input type="checkbox" name="PHP" />
-                <br />
-                <label htmlFor="Salesforce Development">Salesforce Development</label>
-                <Input type="checkbox" name="Salesforce Development" />
-                <br />
-                <label htmlFor="Quality Assurance">Quality Assurance</label>
-                <Input type="checkbox" name="Quality Assurance" />
-                <br />
-                <label htmlFor="Devops">Devops</label>
-                <Input type="checkbox" name="Devops" />
-                <br />
-                <label htmlFor="Other">Other</label>
-                <Input type="checkbox" name="Other" />
-                <br /> */}
-            </div>
+                </ul>
+            </div >
         )
     }
 
 
     return (
         <div className="container bg-light">
-            <div class="row pt-5">
+            <div class="row pt-3">
                 <div className="col-lg-12">
-                <Form className="" name="page2" {...props}> 
-            <h1 className="text-center mt-3 mb-5">Tell us more about your business needs</h1>
+                    <Form className="" name="page2" {...props}>
+                        <h1 className="text-center mt-3 mb-5">Tell us more about your business needs</h1>
+                        <h4 className="text-left p-3">What are the main challenges you’re facing right now?</h4>
+                        {/* <hr className="hr-height"/> */}
+                        <ul>
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Cutting_costs" />
+                                    <div className="checkbox-padding">
+                                        <label>Cutting costs</label>
+                                    </div>
+                                </div>
+                            </li>
 
-            <h2 className="text-left p-3">What are the main challenges you’re facing right now?– Required field</h2>
-            {/* <hr className="hr-height"/> */}
-            <ul>
-                <li>
-                    <div className="d-inline-block d-flex">
-                    <label htmlFor="validate_product" className="pr-5">Validating my product idea</label>
-                        <div className="checkbox-padding">
-                        <Input type="checkbox" className="form-check-input" name="validate_product" />
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="MVP" />
+                                    <div className="checkbox-padding">
+                                        <label>Creating an MVP</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="more_sales" />
+                                    <div className="checkbox-padding">
+                                        <label>Driving more sales</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="Scale" />
+                                    <div className="checkbox-padding">
+                                        <label>Scale an existing product</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" name="validate_product" />
+                                    <div className="checkbox-padding">
+                                        <label className="pr-5">Validating my product idea</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h4 > Want to use Specific technologies ?</h4 >
+
+                        <div className="row">
+                            <div className="col-sm-1 p-3">
+                                <Input type="radio" id="yes" className="btn-check" name="technologies" value="yes" onChange={(e) => operation(e)} />
+                                <label className="btn btn-outline-primary" for="yes">Yes</label>
+                            </div>
+
+                            <div className="col-sm-1 p-3">
+                                <Input type="radio" id="no" className="btn-check" name="technologies" value="No" onChange={(e) => hideoption(e)} checked="checked" />
+                                <label className="btn btn-outline-primary" for="no">No</label>
+                            </div>
                         </div>
-                    </div>
-                    
-                </li>
-                
-                <br />
-                <label htmlFor="MVP">Creating an MVP</label>
-                <Input type="checkbox" className="form-check-input" name="MVP" />
-                <br />
-                <label htmlFor="Scale">Scale an existing product</label>
-                <Input type="checkbox" className="form-check-input" name="Scale" />
-                <br />
-                <label htmlFor="more_sales">Driving more sales</label>
-                <Input type="checkbox" className="form-check-input" name="more_sales" />
-                <br />
-                <label htmlFor="Cutting_costs">Cutting costs</label>
-                <Input type="checkbox" className="form-check-input" name="Cutting_costs" />
 
-                <br />
-            </ul>
-            <h4 > Want to use Specific technologies ?</h4 >
-            <label htmlFor="technologies">Yes</label>
-            <Input type="radio" name="technologies" value="yes" onChange={(e) => operation(e)} />
-            <br />
-            {
-                hide
-                    ?
-                    showBoxes()
-                    :
-                    null
-            }
-            <br />
+                        {
+                            hide
+                                ?
+                                showBoxes()
+                                :
+                                null
+                        }
+                        <div className="row">
+                            <div className="col py-3 pl-2">
+                                <button type="button" className="btn btn-outline-primary" onClick={prevPage}>
+                                    Previous Page
+                                </button>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col py-3 pl-2">
+                                <button type="submit" className="btn btn-outline-primary">Submit</button>
+                            </div>
+                        </div>
 
-            <label htmlFor="technologies">No</label>
-            <Input type="radio" name="technologies" value="No" onChange={(e) => hideoption(e)} checked="checked" />
-            <br />
-            <button type="button" onClick={prevPage}>
-                Previous Page
-            </button>
-            <button type="submit">Submit</button>
-            </Form >
+                    </Form >
                 </div>
             </div>
         </div>
