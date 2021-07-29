@@ -1,7 +1,7 @@
 import Form from "./Forms/form1"
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-light">
       <Form />
     </div>
   );
