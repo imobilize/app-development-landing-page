@@ -25,6 +25,7 @@ export default function WizardFormFirstPage(props) {
                                         <Input type="text" className="form-control" required={true} name="first_Name" />
                                     </div>
                                 </div>
+
                             </div>
                             <div className="col-sm-6">
                                 <div class="form-group mb-3">
