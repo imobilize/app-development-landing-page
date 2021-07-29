@@ -6,23 +6,13 @@
     }
 }
 
-.project-details {
-    height: 100px;
-    
-}
+
 
 .budget-btn {
     width: 10px;
-
     &:hover{
         background-color: rgb(0, 81, 255);
-
     }
-}
-
-::-moz-selection {
-    color: white;
-    background: black;
 }
 
 ::selection {
@@ -46,4 +36,9 @@
 .checkbox-padding{
     position: relative;
     margin-left: 10px;
+}
+
+.btn-position{
+    position: relative;
+    justify-content: center;
 }
