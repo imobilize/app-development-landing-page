@@ -135,14 +135,14 @@ export default function WizardFormFirstPage(props) {
                         </div>
 
                         <div className="row">
-                            <p className="p-3">
+                            <p className="py-3 pl-2">
                                 Need on NDA first? Email us at {<a href="mailto:kamalawan.ak@gmail.com?subject = NDA&body =Message">kamalawan.ak@gmail.com</a>}
                             </p>
                         </div>
 
                         <div className="row">
-                            <div className="col p-3">
-                                <button type="submit" class="btn btn-primary">Next Page</button>
+                            <div className="col py-3 pl-2">
+                                <button type="submit" class="btn btn-outline-primary">Next Page</button>
                             </div>
                         </div>
                     </Form>
