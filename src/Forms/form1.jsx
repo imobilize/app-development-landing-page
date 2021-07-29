@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 
 
 export default function Form1() {
-    const [currentPage, setPage] = useState(2);
+    const [currentPage, setPage] = useState(1);
     const [getWizardState, wizard] = useMultipleForm();
     const nextPage = () => setPage((prev) => ++prev);
     const prevPage = () => setPage((prev) => --prev);
