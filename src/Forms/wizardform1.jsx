@@ -136,7 +136,7 @@ export default function WizardFormFirstPage(props) {
 
                         <div className="row">
                             <p className="py-3 pl-2">
-                                Need on NDA first? Email us at {<a href="mailto:kamalawan.ak@gmail.com?subject = NDA&body =Message">kamalawan.ak@gmail.com</a>}
+                                Need on NDA first? Email us at {<a href="mailto:kamalawan.ak@gmail.com?subject=NDA&body=Message">kamalawan.ak@gmail.com</a>}
                             </p>
                         </div>
 

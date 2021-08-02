@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useMultipleForm } from "usetheform";
 import WizardFormFirstPage from "./wizardform1";
 import WizardFormSecondPage from "./wizardform2";
+import WizardFormThirdPage from './wizardform3';
 import emailjs from "emailjs-com";
 import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
@@ -34,6 +35,13 @@ export default function Form1() {
                 <WizardFormFirstPage {...wizard} onSubmit={nextPage} />
             )}
             {currentPage === 2 && (
+                <WizardFormThirdPage
+                    {...wizard}
+                    onSubmit={nextPage}
+                    prevPage={prevPage}
+                />
+            )}
+            {currentPage === 3 && (
                 <WizardFormSecondPage
                     {...wizard}
                     prevPage={prevPage}

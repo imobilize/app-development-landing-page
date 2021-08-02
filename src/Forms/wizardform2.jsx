@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Form, Input } from "usetheform";
+import { Form, Input, TextArea } from "usetheform";
 import "../styles/main.scss"
 
 
 export default function WizardFormSecondPage({ prevPage, ...props }) {
     let [hide, setHide] = useState(false);
+    let [otherHide, setOtherHide] = useState(false);
     const operation = (e) => {
         setHide(true)
     }
@@ -12,7 +13,27 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
         setHide(false)
     }
 
+    const showHide = (e) => {
+        let checkBox = document.getElementById("other");
+        if (checkBox.checked === true) {
+            setOtherHide(true)
+        }
+        else {
+            setOtherHide(false)
+        }
+    }
 
+
+    const showOther = () => {
+        return (
+
+            <div className="row">
+                <div className="col-md-6">
+                    <TextArea rows="3" cols="2" type="text" className="form-control" name="other_technologies" />
+                </div>
+            </div>
+        )
+    }
 
     const showBoxes = () => {
         return (
@@ -152,7 +173,7 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                     </div>
                 </ul>
 
-                <ul>
+                {/* <ul>
                     <div className="row">
                         <div className="col-sm-3">
                             <li>
@@ -184,7 +205,7 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                                 </div>
                             </li>
                         </div>
-                        <div className="col-sm-3">
+                <div className="col-sm-3">
                             <li>
                                 <div className="d-inline-block d-flex">
                                     <Input type="checkbox" className="form-check-input" name="Other" />
@@ -194,8 +215,38 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                                 </div>
                             </li>
                         </div>
+            </div>
+                </ul > */}
+
+                <ul ul >
+                    <div className="row">
+
+                        <div className="col-sm-3">
+                            <li>
+                                <div className="d-inline-block d-flex">
+                                    <Input type="checkbox" className="form-check-input" id="other" name="Other" onClick={showHide} />
+                                    <div className="checkbox-padding">
+                                        <label htmlFor="Other">Other</label>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </div>
+                        <div className="col-sm-12 mt-3">
+                            <li>
+                                {
+                                    otherHide
+                                        ?
+                                        showOther()
+                                        :
+                                        null
+                                }
+                            </li>
+                        </div>
+
                     </div>
-                </ul>
+                </ul >
             </div >
         )
     }
@@ -205,11 +256,11 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
         <div className="container bg-light">
             <div class="row pt-3">
                 <div className="col-lg-12">
-                    <Form className="" name="page2" {...props}>
-                        <h1 className="text-center mt-3 mb-5">Tell us more about your business needs</h1>
-                        <h4 className="text-left p-3">What are the main challenges you’re facing right now?</h4>
+                    <Form className="well form-horizontal p-5" name="page3" {...props}>
+                        <h1 className="text-center mt-3 mb-5"> Want to use Specific technologies?</h1>
+                        {/* <h4 className="text-left p-3">What are the main challenges you’re facing right now?</h4> */}
                         {/* <hr className="hr-height"/> */}
-                        <ul>
+                        {/* <ul>
                             <li>
                                 <div className="d-inline-block d-flex">
                                     <Input type="checkbox" className="form-check-input" name="Cutting_costs" />
@@ -254,9 +305,9 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                                     </div>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> */}
 
-                        <h4 > Want to use Specific technologies ?</h4 >
+                        {/* <h4 > Want to use Specific technologies ?</h4 > */}
 
                         <div className="row">
                             <div className="col-sm-1 p-3">
