@@ -9,7 +9,7 @@ import useWindowSize from 'react-use/lib/useWindowSize'
 
 
 export default function Form1() {
-    const [currentPage, setPage] = useState(1);
+    const [currentPage, setPage] = useState(3);
     const [res, setRes] = useState();
     const [getWizardState, wizard] = useMultipleForm();
     const { width, height } = useWindowSize()
