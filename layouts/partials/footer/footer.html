@@ -1,0 +1,69 @@
+<style>
+	p {
+    font-size: 20px;
+}
+.banner-bottom {
+    background-image: url("/landing-page/footer-bg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.img1{
+    position: relative;
+    z-index: 2;
+}
+.img2{
+    position: relative;
+    z-index: 1;
+    width: 150%;
+}
+</style>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="d-flex d-inline-block">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="img-fluid w-50 img-1" src="landing-page/buddy-bounce.png" alt="App created and designed by iMobilize ltd | Best App creators in London and Pakistan">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid  img-2" src="landing-page/sky-go.png" alt="App created and designed by iMobilize ltd | Best App creators in London and Pakistan">
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid w-50 img-1" src="landing-page/omit.png" alt="App created and designed by iMobilize ltd | Best App creators in London and Pakistan">
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+                <div class="col-sm-12">
+                    <h1 class="text-center text-white mt-5">Contact Us</h1>
+                    <button type="button" href="/" class="btn btn-block btn-outline-warning cta-btn">Hello World</button>
+                    <button type="button" href="/" class="btn btn-block btn-outline-warning cta-btn">Hello World</button>
+
+                </div>
+            </div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+{{ $template := resources.Get "js/template.js" }}
+{{ $html5shiv := resources.Get "js/html5shiv.js" }}
+{{ $js := (slice $template $html5shiv | resources.Concat "js/bundle.js") | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+{{ if .Site.Params.disqus -}}
+<script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>
+{{ end -}}
+{{ if .Site.Params.google.analytics -}}
+{{ partial "footer/analyticstracking.html" . }}
+{{ end -}}
+</body>
+</html>

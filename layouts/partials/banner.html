@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+    .h-50 {
+        height: 300px;
+        width: auto;
+        
+    }
+    .banner {
+        background-image: url("/landing-page/header-bg.png");
+        width: 100%;
+        height: fit-content;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    
+    }
+    .banner-mockup {
+        position: relative;
+        width: 65%;
+        z-index: 2;
+    }
+    .lazyloaded {
+    opacity: 1;
+    transition: opacity 400ms;
+    transition-delay: 0ms;
+    }
+    .logo {
+    position: relative;
+    width: 70%;
+    }
+
+    .cta-btn {
+        left: 75px;
+        position: relative;
+    }
+    .cta-text{
+        top: 50px;
+        position: relative;
+    }
+    
+    .btn {
+        border: 7px solid!important; 
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 1024px) {
+        .div-mobile {
+            display: block;
+        }
+        .div-desktop {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 3000px) {
+        .div-mobile {
+            display: none;
+        }
+        .div-desktop {
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width: 740px) {
+    h1 {
+    font-size: 22px !important;
+    }
+    .font-weight-bold {
+        font-weight: 700;
+    }
+  }
+  .w-65 {
+      width: 65%;
+  }
+
+
+ 
+.item {
+    position: relative;
+    width: 220px;
+    bottom: 5px;
+    z-index: 4;
+    height: 450px;
+    left: -10px;
+
+}
+@media screen and (max-width: 356px) {
+        .item {
+            width: auto;
+        }
+        
+    }
+.owl-dots {
+    position: relative;
+    right: 700px;
+    bottom: 100px;
+}
+
+.banner-wrapper {
+    position: relative;
+    z-index: 5;    
+    width: 220px;
+    top: 410px
+}
+.ag-slider-wrapper {
+    position: relative;
+    z-index: 4;
+    left: 10px;
+    width: 100%; 
+    float: left;
+}
+.mockup-position {
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+</style>
+<!-- CSS only -->
+</script>
+<section class="banner">
+    <div class="container" >
+        <div class="row">
+            <div class="col-3">
+                <div class="d-flex align-self-start"></div>
+                <img src="landing-page/imobilize-logo.png" class="img-fluid w-100">
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex d-inline-block align-items-center">
+                <div class="col-md-4">
+                    <h1 class="text-left text-white pt-3 pb-3 font-weight-bold">Lorem ipsum dolor sit elit. </h1>
+                    <div class="div-desktop">
+                        <button type="button" href="/" class="btn btn-lg btn-outline-warning">Hello World</button>
+                    </div>
+                    <div class="div-mobile pb-3 ">
+                            <button type="button" href="/" class="btn btn-sm btn-outline-warning ">Hello World</button>
+                        </div>
+                </div>
+                <div class="col-md-8 mt-5 div-desktop">
+                    <div class="d-inline-block d-block align-self-center">
+                            <div class="mockup-position">
+                                <img src="/landing-page/iphone-empty.png" class="img-fluid banner-wrapper">
+                                <div class="ag-slider-wrapper">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="pr-2"></div>
+                                        <div class="item">
+                                            <img src="/landing-page/sky-go-appmockup.png" class="img-fluid">
+                                        </div>
+                                        <div class="pr-2"></div>
+                                        <div class="item active">
+                                            <img src="/landing-page/buddy-bounce-mockup.png" class="img-fluid">
+                                        </div>
+                                        <div class="pr-2"></div>
+                                        <div class="item">
+                                            <img src="/landing-page/omit-app-mockup.png" class="img-fluid">
+                                        </div>
+                                        <div class="pr-2"></div>
+                                        <div class="item">
+                                            <img src="/landing-page/omit-app-mockup.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-8 div-mobile">
+                    <center>                    <img src="/landing-page/omit-app-mockup.png" class="img-fluid w-50">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+        items: 3,
+        margin: 10,
+        stagePadding: 1,
+        lazyLoad: true,
+        loop: true,
+        dots: true,
+        mouseDrag: true,
+        touchDrag: true,
+                responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+    })
+</script>
