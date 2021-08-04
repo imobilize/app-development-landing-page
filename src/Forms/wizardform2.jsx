@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Input, TextArea } from "usetheform";
+import Header from './header';
 import "../styles/main.scss"
 
 
@@ -30,11 +31,12 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
 
 
     return (
-        <div className="container bg-light">
-            <div class="row pt-3">
+        <div className="container">
+            <Header />
+            <div class="row">
                 <div className="col-lg-12">
-                    <Form className="well form-horizontal p-5" name="page3" {...props}>
-                        <h1 className="text-center mt-3 mb-5"> Want to use Specific technologies?</h1>
+                    <Form className="well form-horizontal" name="page3" {...props}>
+                        <h1 className="text-center mt-4 mb-3"> Want to use Specific technologies?</h1>
 
                         <ul>
                             <div className="row">
@@ -213,7 +215,7 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                         </div>
                         <div className="row">
                             <div className="col py-3 pl-2">
-                                <button type="submit" className="btn btn-outline-primary">Submit</button>
+                                <button type="submit" className="btn btn-outline-primary">ESTIMATE MY PROJECT NOW</button>
                             </div>
                         </div>
 

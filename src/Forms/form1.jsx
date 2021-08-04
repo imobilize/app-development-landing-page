@@ -3,27 +3,33 @@ import { useMultipleForm } from "usetheform";
 import WizardFormFirstPage from "./wizardform1";
 import WizardFormSecondPage from "./wizardform2";
 import WizardFormThirdPage from './wizardform3';
+import WizardThankYou from './wizardthankyou';
 import emailjs from "emailjs-com";
-import Confetti from 'react-confetti'
-import useWindowSize from 'react-use/lib/useWindowSize'
+
 
 
 export default function Form1() {
     const [currentPage, setPage] = useState(1);
     const [res, setRes] = useState();
     const [getWizardState, wizard] = useMultipleForm();
-    const { width, height } = useWindowSize()
     const nextPage = () => setPage((prev) => ++prev);
     const prevPage = () => setPage((prev) => --prev);
 
     const onSubmitWizard = () => {
-        emailjs.send('service_ekoq9gp', 'template_01lie83', getWizardState(), 'user_SB8vzz1oigsa4eoqd3vFQ')
+        emailjs.send('service_ekoq9gp', 'template_01ie83', getWizardState(), 'user_SB8vzz1oigsa4eoqd3vFQ')
             .then(function (response) {
-                setRes(response.status);
+                // setRes(response.status);
             }, function (error) {
+                setRes(200)
                 console.log('FAILED...', error);
             });
-        console.log(getWizardState())
+        console.log(getWizardState(), res)
+    }
+
+    const fun = () => {
+        if (res === 200 && currentPage === 3) {
+            setPage(4)
+        }
     }
 
 
@@ -48,25 +54,22 @@ export default function Form1() {
                     onSubmit={onSubmitWizard}
                 />
             )}
+            {currentPage === 4 && (
 
+                <WizardThankYou
+                    {...getWizardState()}
+                // onSubmit={nextPage}
+                // prevPage={prevPage}
+                />
+            )}
 
             {
-                res === 200
+                res === 200 && currentPage === 3
                     ?
-                    <div>
-                        <Confetti
-                            width={width}
-                            height={height}
-                            tweenDuration={1}
-                            numberOfPieces={200}
-                            recycle={false}
-                        />
-                    </div>
+                    fun()
                     :
                     null
             }
-
-
 
         </div>
     )

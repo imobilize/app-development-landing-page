@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Input, TextArea } from "usetheform";
+import Header from './header';
 import "../styles/main.scss"
 
 export default function Wizardform3({ prevPage, ...props }) {
@@ -29,10 +30,10 @@ export default function Wizardform3({ prevPage, ...props }) {
     }
 
     return (
-        <div>
-            <Form className="well form-horizontal p-5" name="page2" {...props}>
-                <h1 className="text-center mt-3 mb-5">Tell us more about your business needs</h1>
-                <h4 className="text-left p-3">What are the main challenges you’re facing right now?</h4>
+        <div className="container">
+            <Header />
+            <Form className="well form-horizontal p-3" name="page2" {...props}>
+                <h3 className="text-left p-3">What are the main challenges you’re facing right now?</h3>
                 {/* <hr className="hr-height"/> */}
                 <ul>
                     <li>
@@ -104,12 +105,15 @@ export default function Wizardform3({ prevPage, ...props }) {
 
                 <div className="row">
                     <div className="col-sm-3">
-                        <button type="button" class="btn btn-outline-primary" onClick={prevPage}>
-                            Previous Page
-                        </button>
-                        <button type="submit" class="btn btn-outline-primary">Next Page</button>
+                        <div className="p-2">
+                            <button type="submit" className="btn btn-outline-primary">Next Page</button>
+                        </div>
+                        <div className="p-2">
+                            <button type="button" className="btn btn-outline-primary" onClick={prevPage}>
+                                Previous Page
+                            </button>
+                        </div>
                     </div>
-
                 </div>
 
 
