@@ -32,9 +32,8 @@ export default function Wizardform3({ prevPage, ...props }) {
     return (
         <div className="container">
             <Header />
-            <Form className="well form-horizontal p-3" name="page2" {...props}>
+            <Form className="well form-horizontal p-3" name="page3" {...props}>
                 <h3 className="text-left p-3">What are the main challenges you’re facing right now?</h3>
-                {/* <hr className="hr-height"/> */}
                 <ul>
                     <li>
                         <div className="d-inline-block d-flex">
@@ -104,23 +103,18 @@ export default function Wizardform3({ prevPage, ...props }) {
 
 
                 <div className="row">
-                    <div className="col-sm-3">
+                    <div className="col-sm-6">
                         <div className="p-2">
-                            <button type="submit" className="btn btn-outline-primary">Next Page</button>
-                        </div>
-                        <div className="p-2">
-                            <button type="button" className="btn btn-outline-primary" onClick={prevPage}>
+                            <button type="button" className="btn btn-outline-dark btn-light btn-space" onClick={prevPage}>
                                 Previous Page
+                            </button>
+                            <button type="submit" className="btn btn-outline-success btn-light">
+                                Next Page
                             </button>
                         </div>
                     </div>
                 </div>
-
-
             </Form>
-
-
-
         </div>
     )
 }

@@ -19,7 +19,7 @@ export default function Wizardthankyou({ prevPage, ...props }) {
     const pointsys = () => {
         const comp_size = props.company_Size
         const funds = props.company_Funds
-        const budget = props.value
+        const budget = props.budget
 
         if (comp_touched === 0) {
             if (comp_size === "Individual" && newUser === 0) {
@@ -119,9 +119,9 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
     const forNewUser = () => {
         return (
-            <li>
+            <p>
                 Branding and creating a minimal viable product
-            </li>
+            </p>
 
         )
     }
@@ -130,9 +130,9 @@ export default function Wizardthankyou({ prevPage, ...props }) {
         if (p > 2 && p < 10) {
             return (
 
-                <li>
+                <p>
                     Generating more leads and sales through a landing page
-                </li>
+                </p>
 
 
 
@@ -141,9 +141,9 @@ export default function Wizardthankyou({ prevPage, ...props }) {
         }
         else if (p >= 8) {
             return (
-                <li>
+                <p>
                     Creating a bolt on digital product to grow your business
-                </li>
+                </p>
 
             )
         }
@@ -186,76 +186,26 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
 
 
-                {
-                    props.Cutting_costs
-                        ?
-                        <li>
-                            Cutting costs
-                        </li>
-                        :
-                        null
-                }
-
-
-
-                {
-                    props.MVP && newUser === 0
-                        ?
-                        <li>
-                            Creating an MVP
-                        </li>
-                        :
-                        null
-                }
-
-
-                {
-                    props.more_sales
-                        ?
-                        <li>
-                            Driving more sales
-                        </li>
-                        :
-                        null
-                }
-
-
-
-                {
-                    props.Scale
-                        ?
-                        <li>
-                            Scale an existing product
-                        </li>
-                        :
-                        null
-                }
-
-
-
-                {
-                    props.validate_product
-                        ?
-                        <li>
-                            Validating my product idea
-                        </li>
-                        :
-                        null
-                }
 
 
 
 
 
-                {
-                    props.Other
-                        ?
-                        <li>
-                            {props.other_problems}
-                        </li>
-                        :
-                        null
-                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

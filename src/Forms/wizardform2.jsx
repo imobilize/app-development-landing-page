@@ -33,7 +33,7 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
     return (
         <div className="container">
             <Header />
-            <div class="row">
+            <div className="row">
                 <div className="col-lg-12">
                     <Form className="well form-horizontal" name="page3" {...props}>
                         <h1 className="text-center mt-4 mb-3"> Want to use Specific technologies?</h1>
@@ -163,7 +163,7 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                                 <div className="col-sm-3">
                                     <li>
                                         <div className="d-inline-block d-flex">
-                                            <Input type="checkbox" className="form-check-input" className="form-check-input" name="PHP" />
+                                            <Input type="checkbox" className="form-check-input" name="PHP" />
                                             <div className="checkbox-padding">
                                                 <label htmlFor="PHP">PHP</label>
                                             </div>
@@ -201,24 +201,14 @@ export default function WizardFormSecondPage({ prevPage, ...props }) {
                         </ul >
 
                         <div className="row">
-                            <div className="col-sm-3 pl-2 py-3">
-                                <Input type="checkbox" id="no" className="btn-check" name="technologies" id="no" autocomplete="off" />
-                                <label className="btn btn-outline-primary" for="no">Let Us Decide</label>
-                            </div>
-                        </div>
-                        <div className="row">
                             <div className="col py-3 pl-2">
-                                <button type="button" className="btn btn-outline-primary" onClick={prevPage}>
+                                <button type="button" className="btn btn-outline-dark btn-light btn-space" onClick={prevPage}>
                                     Previous Page
                                 </button>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col py-3 pl-2">
-                                <button type="submit" className="btn btn-outline-primary">ESTIMATE MY PROJECT NOW</button>
-                            </div>
-                        </div>
 
+                                <button type="submit" className="btn btn-outline-success">ESTIMATE MY PROJECT NOW</button>
+                            </div>
+                        </div>
                     </Form >
                 </div>
             </div>
