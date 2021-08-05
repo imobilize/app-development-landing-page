@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Select, TextArea } from "usetheform";
+import { Form, Input } from "usetheform";
 import Header from "./header";
 import "../styles/main.scss"
 
@@ -9,17 +9,17 @@ export default function WizardFormFirstPage(props) {
     return (
         <div className="container">
             <Header />
-            <div class="row mb-3">
+            <div className="row mb-3">
                 <div className="row mt-5 text-center">
                     <h2>Project Pricing Enquiry</h2>
                 </div>
             </div>
-            <div class="row">
+            <div className="row">
                 <div className="col-sm-12">
                     <Form className="well form-horizontal p-5" name="page1" {...props}>
                         <div className="row">
                             <div className="col-sm-6">
-                                <div class="form-group mb-3">
+                                <div className="form-group mb-3">
                                     <label className="control-label col-sm-12 mb-1 form-label" >
                                         First Name <span>*</span>
                                     </label>
@@ -29,93 +29,47 @@ export default function WizardFormFirstPage(props) {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div class="form-group mb-3">
+                                <div className="form-group mb-3">
                                     <label className="control-label col-sm-12 mb-1 form-label">
                                         Last Name <span>*</span>
                                     </label>
-                                    <div class="col-sm-12 mb-1">
+                                    <div className="col-sm-12 mb-1">
                                         <Input type="text" className="form-control" required={true} name="last_Name" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div className="row">
                             <div className="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label for="email" className="control-label col-sm-12 mb-1 form-label">
+                                <div className="form-group mb-3">
+                                    <label className="control-label col-sm-12 mb-1 form-label">
                                         Email <span className="">*</span>
                                     </label>
-                                    <div class="col-sm-12 mb-1">
+                                    <div className="col-sm-12 mb-1">
                                         <Input type="email" className="form-control" required={true} name="email" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label for="phone" className="control-label col-sm-12 mb-1 form-label">
+                                <div className="form-group mb-3">
+                                    <label className="control-label col-sm-12 mb-1 form-label">
                                         Contact number
                                     </label>
-                                    <div class="col-sm-12 mb-1">
+                                    <div className="col-sm-12 mb-1">
                                         <Input type="tel" className="form-control" name="phone" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div className="row">
-                            <div className="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label for="company_Name" className="control-label col-sm-12 mb-1 form-label">
-                                        What is your company name?
-                                    </label>
-                                    <div class="col-sm-12 mb-1">
-                                        <Input type="text" className="form-control" name="company_Name" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6">
-                                <div className="form-group mb-3">
-                                    <label for="company_Size" className="control-label col-sm-12 mb-1 form-label">
-                                        How big is your company? <span>*</span>
-                                    </label>
-                                    <div className="col-sm-12 mb-1">
-                                        <Select type="select" className="form-control" required={true} name="company_Size">
-                                            <option value="" disabled selected hidden>Please Select</option>
-                                            <option value="Individual">Individual</option>
-                                            <option value="1-10">1-10 Employees</option>
-                                            <option value="10-50">10-50 Employees</option>
-                                            <option value="100+">100+ Employees</option>
-                                        </Select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div className="form-group mb-3">
-                                    <label className="control-label col-sm-12 mb-1 form-label">
-                                        Have you raised any funding for your project? <span>*</span>
-                                    </label>
-                                    <div className="col-sm-12 mb-1">
-                                        <Select type="select" className="form-control" required={true} name="company_Funds">
-                                            <option value="" disabled selected hidden>Please Select</option>
-                                            <option value="self">I am self funded</option>
-                                            <option value="existing-business">Funding from an existing business</option>
-                                            <option value="seed-Angel">Seed/Angel funding</option>
-                                            <option value="venture-capital">Venture capital funding</option>
-                                        </Select>
-                                    </div>
-                                </div>
-                            </div>
                             <div className="col-sm-6">
                                 <div className="form-group mb-3">
                                     <label className="control-label col-sm-12 mb-1 form-label">
                                         Where are you located? <span>*</span>
                                     </label>
                                     <div className="col-sm-12 mb-1">
-                                        <Select type="select" className="form-control" required={true} name="country">
-                                            <option value="" disabled selected hidden>Please Select</option>
+                                        <select type="select" defaultValue="" className="form-control" required={true} name="country">
+                                            <option value="" disabled hidden>Please Select</option>
                                             <option value="Afghanistan">Afghanistan</option>
                                             <option value="Åland Islands">Åland Islands</option>
                                             <option value="Albania">Albania</option>
@@ -360,88 +314,19 @@ export default function WizardFormFirstPage(props) {
                                             <option value="Yemen">Yemen</option>
                                             <option value="Zambia">Zambia</option>
                                             <option value="Zimbabwe">Zimbabwe</option>
-                                        </Select>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label className="control-label col-sm-12 mb-1 form-label">
-                                        What time frame did you have in mind for your project?
-                                    </label>
-                                    <div className="col-sm-12 mb-1">
-                                        <Select type="select" className="form-control" name="time">
-                                            <option value="" disabled selected hidden>Please Select</option>
-                                            <option value="1_month">1 Month</option>
-                                            <option value="3_months">3 Months</option>
-                                            <option value="6+_months">6+ Months</option>
-                                        </Select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6">
-                                <div class="form-group mb-3">
-                                    <label for="project_Details" className="control-label col-sm-6 mb-1 form-label">
-                                        Tell us about your project <span>*</span>
-                                    </label>
-                                    <div class="col-sm-12 col-md-12 col-lg-12 ">
-                                        <TextArea rows="3" cols="1" required={true} type="text" className="form-control" name="project_Details" />
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                        <div className="row">
-                            <div className="row">
-                                <label className="control-label col-sm-4 mb-1 form-label">
-                                    Within a budget of?
-                                </label>
-                            </div>
-
-                            <div className="col-sm-8 mx-2 py-3 ">
-                                <div className="row">
-                                    <div className="col p-1">
-                                        <Input type="radio" className="btn-check" id="dk" value="Don't Know" name="value" />
-                                        <label className="btn btn-outline-primary" for="dk">Don't Know</label>
-                                    </div>
-
-                                    <div className="col p-1">
-                                        <Input type="radio" className="btn-check" id="100-1000" value="100-1000" name="value" />
-                                        <label className="btn btn-outline-primary" for="100-1000" >$100-$1000</label>
-                                    </div>
-
-                                    <div className="col  p-1">
-                                        <Input type="radio" className="btn-check" id="1000-5000" value="1000-5000" name="value" />
-                                        <label for="1000-5000" className="btn btn-outline-primary">$1000-$5000</label>
-                                    </div>
-                                    <div className="col p-1">
-                                        <Input type="radio" className="btn-check" id="5000-15000" value="5000-15000" name="value" />
-                                        <label className="btn btn-outline-primary" for="5000-15000">$5000-$15000</label>
-                                    </div>
-                                    <div className="col  p-1">
-                                        <Input type="radio" className="btn-check" id="20k" value="20k+" name="value" />
-                                        <label className="btn btn-outline-primary" for="20k">$20k+</label>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div className="row">
                             <p className="py-3 pl-2">
                                 Need on NDA first? Email us at {<a href="mailto:kamalawan.ak@gmail.com?subject=NDA&body=Message">kamalawan.ak@gmail.com</a>}
                             </p>
                         </div>
-
                         <div className="row">
-                            <div className="col py-3">
-                                <button type="submit" class="btn btn-outline-primary">Next Page</button>
+                            <div className="col ">
+                                <button type="submit" className="btn btn-outline-success">Next Page</button>
                             </div>
                         </div>
                     </Form>

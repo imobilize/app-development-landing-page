@@ -5,7 +5,7 @@ export default function Header() {
     return (
 
         <div className="col-md-12 p-4">
-            <img src={img}></img>
+            <img src={img} alt="logo"></img>
         </div>
 
     )
