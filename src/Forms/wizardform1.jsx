@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input } from "usetheform";
+import { Form, Input, Select } from "usetheform";
 import Header from "./header";
 import "../styles/main.scss"
 
@@ -68,7 +68,7 @@ export default function WizardFormFirstPage(props) {
                                         Where are you located? <span>*</span>
                                     </label>
                                     <div className="col-sm-12 mb-1">
-                                        <select type="select" defaultValue="" className="form-control" required={true} name="country">
+                                        <Select type="select" defaultValue="" className="form-control" required={true} name="country">
                                             <option value="" disabled hidden>Please Select</option>
                                             <option value="Afghanistan">Afghanistan</option>
                                             <option value="Åland Islands">Åland Islands</option>
@@ -314,7 +314,7 @@ export default function WizardFormFirstPage(props) {
                                             <option value="Yemen">Yemen</option>
                                             <option value="Zambia">Zambia</option>
                                             <option value="Zimbabwe">Zimbabwe</option>
-                                        </select>
+                                        </Select>
                                     </div>
                                 </div>
                             </div>

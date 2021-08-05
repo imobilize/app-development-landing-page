@@ -11,18 +11,17 @@ import emailjs from "emailjs-com";
 
 
 export default function Form1() {
-    const [currentPage, setPage] = useState(5);
+    const [currentPage, setPage] = useState(1);
     const [res, setRes] = useState();
     const [getWizardState, wizard] = useMultipleForm();
     const nextPage = () => setPage((prev) => ++prev);
     const prevPage = () => setPage((prev) => --prev);
 
     const onSubmitWizard = () => {
-        emailjs.send('service_ekoq9gp', 'template_01ie83', getWizardState(), 'user_SB8vzz1oigsa4eoqd3vFQ')
+        emailjs.send('service_ekoq9gp', 'template_01lie83', getWizardState(), 'user_SB8vzz1oigsa4eoqd3vFQ')
             .then(function (response) {
-                // setRes(response.status);
+                setRes(response.status);
             }, function (error) {
-                setRes(200)
                 console.log('FAILED...', error);
             });
         console.log(getWizardState(), res)
@@ -66,6 +65,7 @@ export default function Form1() {
                     prevPage={prevPage}
                 />
             )}
+
             {currentPage === 5 && (
                 <WizardFormSecondPage
                     {...wizard}
@@ -73,10 +73,6 @@ export default function Form1() {
                     onSubmit={onSubmitWizard}
                 />
             )}
-
-
-
-
 
             {currentPage === 6 && (
 

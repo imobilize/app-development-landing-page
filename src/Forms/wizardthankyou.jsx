@@ -4,8 +4,6 @@ import useWindowSize from 'react-use/lib/useWindowSize'
 import Header from './header'
 import "../styles/main.scss"
 
-
-
 export default function Wizardthankyou({ prevPage, ...props }) {
     let [points, setPoints] = useState(0)
     let [comp_touched, setComp_touched] = useState(0)
@@ -119,40 +117,33 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
     const forNewUser = () => {
         return (
-            <p>
+            <strong>
                 Branding and creating a minimal viable product
-            </p>
+            </strong>
 
         )
     }
     const calPoints = (p) => {
-
         if (p > 2 && p < 10) {
             return (
 
-                <p>
+                <strong>
                     Generating more leads and sales through a landing page
-                </p>
-
-
+                </strong>
 
             )
-
         }
         else if (p >= 8) {
             return (
-                <p>
+                <strong>
                     Creating a bolt on digital product to grow your business
-                </p>
-
+                </strong>
             )
         }
-
     }
 
     return (
         <div className="container">
-
             <Header />
             <div className="p-3">
 
@@ -164,17 +155,12 @@ export default function Wizardthankyou({ prevPage, ...props }) {
                         null
                 }
 
-
                 <h1 className="text-center mt-3 mb-5"> Thank you for submitting your enquiry</h1>
                 <p className="text-left">We will review the details and get back to you with an answer soon.
 
                     In the past we have helped hundreds of clients design, develop and launch their digital products. Not only do we help to create the products themselves such as websites and mobile apps, we even assist with marketing strategy.
                 </p>
                 <p className="text-left">From assessing your level, we feel you will need help with  </p>
-
-
-
-
 
                 {
                     newUser === 1
@@ -184,37 +170,11 @@ export default function Wizardthankyou({ prevPage, ...props }) {
                         calPoints(points)
                 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <p className="text-left mt-3">We are happy to assist with that and we have put together something that you will love. It has helped many of our clients in the past save money and time on their projects. And most importantly, it helped grow their business exponentially.</p>
                 <button type="button" className="btn btn-outline-primary">
                     I’M READY TO GROW MY BUSINESS
                 </button>
-                {/* {console.log(++points)} */}
+
                 <Confetti
                     width={width}
                     height={height}
