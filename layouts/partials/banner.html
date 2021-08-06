@@ -87,6 +87,9 @@
         position: relative;
         right: 20px;
         bottom: 10px;
+        padding: 20px;
+        margin-bottom: 40px;
+        
         }
         .mockup-position {
         position: relative;
@@ -97,8 +100,10 @@
     }
 .owl-dots {
     position: relative;
-    right: 840px;
+    /* right: 810px; */
     bottom: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .banner-wrapper {
@@ -114,18 +119,22 @@
     width: 260px; 
     float: left;
 }
-.mockup-position {
+/* .mockup-position {
     position: relative;
     /* bottom: 160px; */
     /* left: 10px; */
-}
+} */
 .item {
-    position: static;
+    position: absolute;
     width: fit-content;
     height: fit-content;
     bottom: 200px;
-    /* z-index: 4; */
+    z-index: 4;
     /* left: 100px; */
+}
+.empty-iphone {
+    position: absolute;
+
 }
 </style>
 <!-- CSS only -->
@@ -163,7 +172,9 @@
                     <div class="">
                             <div class="mockup-position">
                                 <div class="ag-slider-wrapper">
-                                    <img src="/landing-page/iphone-empty.png" class="banner-wrapper">
+                                    <div class="empty-iphone">
+                                        <img src="/landing-page/iphone-empty.png" class="banner-wrapper">
+                                    </div>
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <img src="/landing-page/sky-app.png" class="img-fluid">
