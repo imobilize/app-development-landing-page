@@ -6,7 +6,7 @@ import WizardFormThirdPage from './wizardform3';
 import WizardThankYou from './wizardthankyou';
 import Page2 from './page2'
 import Page3 from './page3';
-import emailjs from "emailjs-com";
+import axios from 'axios';
 
 
 
