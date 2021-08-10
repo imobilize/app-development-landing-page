@@ -18,12 +18,12 @@ export default function Form1() {
     const prevPage = () => setPage((prev) => --prev);
 
     const onSubmitWizard = () => {
-        emailjs.send('service_ekoq9gp', 'template_01lie83', getWizardState(), 'user_SB8vzz1oigsa4eoqd3vFQ')
-            .then(function (response) {
+
+        axios.post("https://sheet.best/api/sheets/8a7a3f8b-963a-4168-98ba-ab212ba994b8", getWizardState())
+            .then(response => {
                 setRes(response.status);
-            }, function (error) {
-                console.log('FAILED...', error);
-            });
+            })
+
         console.log(getWizardState(), res)
     }
 
