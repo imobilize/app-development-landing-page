@@ -1,6 +1,6 @@
 [build]
 publish = "build"
-command = "hugo"
+command = "npm run build && hugo"
 
 [build.environment]
   HUGO_VERSION = "0.68.3"
