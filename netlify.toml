@@ -1,5 +1,5 @@
 [build]
-publish = "build/"
+publish = "build"
 command = "echo 'npm run build' 'hugo -d build'"
 
 [context.production.environment]
