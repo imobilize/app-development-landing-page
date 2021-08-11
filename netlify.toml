@@ -3,6 +3,6 @@ publish = "build"
 command = "npm run build && hugo -d build"
 
 [context.production.environment]
-HUGO_VERSION = "0.68.3"
+HUGO_VERSION = "0.54.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
