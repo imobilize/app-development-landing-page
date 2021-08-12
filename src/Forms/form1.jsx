@@ -19,7 +19,9 @@ export default function Form1() {
 
     const onSubmitWizard = () => {
 
-        axios.post("https://sheet.best/api/sheets/8a7a3f8b-963a-4168-98ba-ab212ba994b8", getWizardState())
+
+        axios.post("https://sheet.best/api/sheets/d6fa6b1c-a455-43f7-99e2-f638c8747c02", getWizardState())
+
             .then(response => {
                 setRes(response.status);
             })
