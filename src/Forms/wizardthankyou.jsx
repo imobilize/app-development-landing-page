@@ -170,10 +170,10 @@ export default function Wizardthankyou({ prevPage, ...props }) {
                         calPoints(points)
                 }
 
-                <p className="text-left mt-3">We are happy to assist with that and we have put together something that you will love. It has helped many of our clients in the past save money and time on their projects. And most importantly, it helped grow their business exponentially.</p>
-                <button type="button" className="btn btn-outline-primary">
+                {/* <p className="text-left mt-3">We are happy to assist with that and we have put together something that you will love. It has helped many of our clients in the past save money and time on their projects. And most importantly, it helped grow their business exponentially.</p> */}
+                {/* <button type="button" className="btn btn-outline-primary">
                     I’M READY TO GROW MY BUSINESS
-                </button>
+                </button> */}
 
                 <Confetti
                     width={width}

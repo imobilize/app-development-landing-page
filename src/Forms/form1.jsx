@@ -6,7 +6,7 @@ import WizardFormThirdPage from './wizardform3';
 import WizardThankYou from './wizardthankyou';
 import Page2 from './page2'
 import Page3 from './page3';
-import emailjs from "emailjs-com";
+import axios from 'axios';
 
 
 
@@ -18,12 +18,12 @@ export default function Form1() {
     const prevPage = () => setPage((prev) => --prev);
 
     const onSubmitWizard = () => {
-        emailjs.send('service_ekoq9gp', 'template_01lie83', getWizardState(), 'user_SB8vzz1oigsa4eoqd3vFQ')
-            .then(function (response) {
+
+        axios.post("https://sheet.best/api/sheets/d6fa6b1c-a455-43f7-99e2-f638c8747c02", getWizardState())
+            .then(response => {
                 setRes(response.status);
-            }, function (error) {
-                console.log('FAILED...', error);
-            });
+            })
+
         console.log(getWizardState(), res)
     }
 
