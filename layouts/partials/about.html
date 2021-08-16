@@ -33,6 +33,64 @@
     .font-weight-bold {
         font-weight: 700;
     }
+
+    .example_f {
+   border-radius: 4px;
+   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+
+    #rocking {
+        animation: rocking 10s infinite ease;
+
+    }
+
+    @keyframes rocking {
+    0%, 100% { transform: rotate(-0.1deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(0.1deg); }
+    80% {transform:scale(.95);}
+    }
+
+    .event{
+  margin:50px auto;
+  text-align:center;
+}
+
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
 </style>
 <section class="mt-5">
     <div class="container div-desktop">
@@ -64,7 +122,6 @@
         <div class="col-md-12">
             <center>
                 <img src="landing-page/fitfreaks-mockup.png" class="img-fluid w-75">
-
             </center>
                 </div>
     </div>

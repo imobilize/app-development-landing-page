@@ -36,6 +36,115 @@
         z-index: 1;
         top: 90px;
     }
+
+    /* !! mobile view button !! */
+
+    .example_ {
+   border-radius: 4px;
+   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 16px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: fit-content;
+   transition: all 0.4s;
+   cursor: pointer;   
+ }
+
+    #rocking {
+        animation: rocking 10s infinite ease;
+
+    }
+
+    @keyframes rocking {
+    0%, 100% { transform: rotate(-0.1deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(0.1deg); }
+    80% {transform:scale(.95);}
+    }
+
+    .event{
+  margin:50px auto;
+  text-align:center;
+}
+
+ .example_ span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_ span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   transition: 0.5s;
+ }
+
+ /* !! mobile view button end !! */
+
+    .example_f {
+   border-radius: 4px;
+   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+
+    #rocking {
+        animation: rocking 10s infinite ease;
+
+    }
+
+    @keyframes rocking {
+    0%, 100% { transform: rotate(-0.1deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(0.1deg); }
+    80% {transform:scale(.95);}
+    }
+
+    .event{
+  margin:50px auto;
+  text-align:center;
+}
+
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
 </style>
 
 <footer>
@@ -52,14 +161,24 @@
         <div class="container">
             <div class="row">
                 <div class="p-5"></div>
-                <div class="p-5"></div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <!-- <h1 class="text-center text-white p-3 font-weight-bold">Contact Us</h1> -->
+                <div class="col-md-12 div-desktop">
+                    <h1 class="text-center text-white p-5 font-weight-bold">Contact Us</h1>
                     <center>
-                        <a type="button" href="/enquiry-form/" class="btn btn-lg btn-warning">ESTIMATE THE COST OF MY
-                            PROJECT</a>
+                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
+                    </center>
+                    <div class="p-3"></div>
+                    <!-- <div class="mb-3">
+                        <center>
+                            <a type="button" href="/" class="btn btn-lg btn-outline-warning">Hello World</a>
+                        </center>
+                    </div> -->
+                </div>
+                <div class="col-md-12 div-mobile">
+                    <h1 class="text-center text-white p-5 font-weight-bold">Contact Us</h1>
+                    <center>
+                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
                     </center>
                     <div class="p-3"></div>
                     <!-- <div class="mb-3">
