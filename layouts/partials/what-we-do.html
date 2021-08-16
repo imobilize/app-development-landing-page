@@ -18,6 +18,60 @@
         display: table;
         margin: 0 auto;
     }
+
+    /* !! mobile view button !! */
+
+    .example_ {
+   border-radius: 4px;
+   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 16px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: fit-content;
+   transition: all 0.4s;
+   cursor: pointer;   
+ }
+
+    #rocking {
+        animation: rocking 10s infinite ease;
+
+    }
+
+    @keyframes rocking {
+    0%, 100% { transform: rotate(-0.1deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(0.1deg); }
+    80% {transform:scale(.95);}
+    }
+
+    .event{
+  margin:50px auto;
+  text-align:center;
+}
+
+ .example_ span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_ span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   transition: 0.5s;
+ }
+
+ /* !! mobile view button end !! */
+
+
     .example_f {
    border-radius: 4px;
    background: linear-gradient(to right, #FF882E, #FF882E) !important;
@@ -194,9 +248,11 @@
                     </br>
                 </ul>
                 <div class="pt-3"></div>
-                <center>
-                    <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                </center>
+                <div class="mb-5">
+                    <center>
+                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
+                    </center>
+                </div>
 
             </div>
             <div class="col-md-12 pt-3">
