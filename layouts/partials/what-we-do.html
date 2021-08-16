@@ -18,14 +18,70 @@
         display: table;
         margin: 0 auto;
     }
+    .example_f {
+   border-radius: 4px;
+   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+
+    #rocking {
+        animation: rocking 10s infinite ease;
+
+    }
+
+    @keyframes rocking {
+    0%, 100% { transform: rotate(-0.1deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(0.1deg); }
+    80% {transform:scale(.95);}
+    }
+
+    .event{
+  margin:50px auto;
+  text-align:center;
+}
+
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
 </style>
 <section class="pt-5">
     <div class="container div-desktop">
         <div class="row">
             <div class="d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 p-3">
                     <h1 class="text-center pt-2 font-weight-bold">What we do</h1>
-                    <ul class="p-3 text-center">
+                    <ul class="p-3 text-left">
                         <li> Graphic Design UX / UI </li>
                         </br>
                         <li>Branding and Logos
@@ -61,10 +117,7 @@
                         </br>
                     </ul>
                     <center>
-                        <a type="button" href="/enquiry-form/" class="btn btn-lg btn-warning border-">ESTIMATE
-                            THE COST
-                            OF MY PROJECT
-                        </a>
+                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
                     </center>
 
 
@@ -142,11 +195,7 @@
                 </ul>
                 <div class="pt-3"></div>
                 <center>
-                    <button type="button" href="/enquiry-form/" class="btn btn-sm btn-warning border-">ESTIMATE
-                        THE COST OF
-                        MY PROJECT
-                    </button>
-
+                    <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
                 </center>
 
             </div>

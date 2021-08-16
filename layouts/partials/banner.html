@@ -58,10 +58,6 @@
         position: relative;
     }
 
-    .btn {
-        border: 7px solid !important;
-    }
-
     @media screen and (min-width: 0px) and (max-width: 1024px) {
         .div-mobile {
             display: block;
@@ -146,6 +142,67 @@
         position: relative;
         margin-left: auto;
     }
+    
+    .example_f {
+   border-radius: 4px;
+   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+
+    #rocking {
+        animation: rocking 10s infinite ease;
+
+    }
+
+    @keyframes rocking {
+    0%, 100% { transform: rotate(-0.1deg); }
+    20% {transform:scale(.95);}
+    50% { transform: rotate(0.1deg); }
+    80% {transform:scale(.95);}
+    }
+
+    .event{
+  margin:50px auto;
+  text-align:center;
+}
+
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+.bg-orange {
+    color: #FF882E
+}
 </style>
 <!-- CSS only -->
 
@@ -159,8 +216,8 @@
         <div class="row">
             <div class="col-md-7 mt-5">
                 <div class="div-desktop">
-                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
-                            customers are mobile</span></h3> </br>
+                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3 text-uppercase">Your
+                            customers are <span class="bg-orange">mobile</span></h3> </br>
                     </br>
                     <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
                         responsive websites so that you can reach them
@@ -172,8 +229,8 @@
                     </h2>
                 </div>
                 <div class="div-mobile">
-                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
-                            customers are mobile</span></h3> </br>
+                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3">Your
+                            customers are <span class="bg-warning">mobile</span></h3> </br>
                     </br>
                     <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
                         responsive websites so that you can reach them
@@ -185,16 +242,12 @@
                     </h2>
                 </div>
 
-                <div class="div-desktop pb-5">
-
-                    <a type="button" href="/enquiry-form/" class="btn btn-lg btn-warning">ESTIMATE THE COST
-                        OF MY
-                        PROJECT</a>
+                <div class="div-desktop pb-5 mt-5">
+                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
                 </div>
-                <div class="div-mobile mb-5">
-                    <a type="button" href="/enquiry-form/" class="btn btn-sm btn-warning ">ESTIMATE THE
-                        COST OF MY
-                        PROJECT</a>
+
+                <div class="div-mobile mb-5 mt-5">
+                    <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
                 </div>
             </div>
             <div class="col-md-5">
