@@ -96,28 +96,13 @@
         width: 65%;
     }
 
-    @media screen and (max-width: 356px) {
-        .item {
-            position: relative;
-            width: min-content;
-            bottom: 0px;
-            z-index: 4;
-            left: -10px;
-        }
+    @media screen and (max-width: 750px) {
 
-        .owl-dots {
+        .ag-slider-wrapper {
             position: relative;
-            right: 20px;
-            bottom: 10px;
-            padding: 20px;
-            margin-bottom: 40px;
-
-        }
-
-        .mockup-position {
-            position: relative;
-            bottom: 100px;
-            left: 100px;
+            left: 10px;
+            width: 100px;
+            float: left;
         }
 
     }
@@ -142,7 +127,7 @@
         position: relative;
         /* z-index: 4; */
         left: 10px;
-        width: 260px;
+        width: 300px;
         float: left;
     }
 
@@ -156,125 +141,92 @@
     .empty-iphone {
         position: absolute;
     }
+
+    .mob-right {
+        position: relative;
+        margin-left: auto;
+    }
 </style>
 <!-- CSS only -->
 
 <section class="banner">
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                <div class="d-flex align-self-start"></div>
-                <img src="landing-page/imobilize-logo.png" class="img-fluid w-100">
+            <div class="col-md-4">
+                <img src="landing-page/imobilize-logo.png" width="50%" class="img-fluid">
             </div>
         </div>
         <div class="row">
-            <div>
-                <div class="col-sm-8 mt-5">
-                    <div class="div-desktop">
-                        <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
-                                customers are mobile</span></h3> </br>
-                        </br>
-                        <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
-                            responsive websites so that you can reach them
-                        </h1>
-                        </br>
-                        </br>
-                        <h2 class="text-white font-weight-bold pb-2">
-                            Welcome to iMobilize
-                        </h2>
-                    </div>
-                    <div class="div-mobile">
-                        <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
-                                customers are mobile</span></h3> </br>
-                        </br>
-                        <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
-                            responsive websites so that you can reach them
-                        </h1>
-                        </br>
-                        </br>
-                        <h2 class="text-white font-weight-bold pb-2">
-                            Welcome to iMobilize
-                        </h2>
-                    </div>
-
-                    <div class="div-desktop pb-5">
-
-                        <a type="button" href="/enquiry-form/" class="btn btn-lg btn-warning">ESTIMATE THE COST
-                            OF MY
-                            PROJECT</a>
-                    </div>
-                    <div class="div-mobile mb-5">
-                        <a type="button" href="/enquiry-form/" class="btn btn-sm btn-warning ">ESTIMATE THE
-                            COST OF MY
-                            PROJECT</a>
-                    </div>
-
-
+            <div class="col-md-7 mt-5">
+                <div class="div-desktop">
+                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
+                            customers are mobile</span></h3> </br>
+                    </br>
+                    <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
+                        responsive websites so that you can reach them
+                    </h1>
+                    </br>
+                    </br>
+                    <h2 class="text-white font-weight-bold pb-2">
+                        Welcome to iMobilize
+                    </h2>
                 </div>
-                <div class="col-sm-4">
-                    <div class="">
-                        <div class="mockup-position">
-                            <div class="ag-slider-wrapper">
-                                <div class="empty-iphone">
-                                    <img src="/landing-page/iphone-empty.png" class="banner-wrapper">
+                <div class="div-mobile">
+                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
+                            customers are mobile</span></h3> </br>
+                    </br>
+                    <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
+                        responsive websites so that you can reach them
+                    </h1>
+                    </br>
+                    </br>
+                    <h2 class="text-white font-weight-bold pb-2">
+                        Welcome to iMobilize
+                    </h2>
+                </div>
+
+                <div class="div-desktop pb-5">
+
+                    <a type="button" href="/enquiry-form/" class="btn btn-lg btn-warning">ESTIMATE THE COST
+                        OF MY
+                        PROJECT</a>
+                </div>
+                <div class="div-mobile mb-5">
+                    <a type="button" href="/enquiry-form/" class="btn btn-sm btn-warning ">ESTIMATE THE
+                        COST OF MY
+                        PROJECT</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="d-flex justify-content-end">
+                    <div class="m-auto">
+                        <div class="ag-slider-wrapper">
+                            <div class="empty-iphone">
+                                <img src="/landing-page/iphone-empty.png" class="banner-wrapper">
+                            </div>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="/landing-page/sky-app.png" class="img-fluid">
                                 </div>
-                                <div class="owl-carousel owl-theme">
-                                    <div class="item">
-                                        <img src="/landing-page/sky-app.png" class="img-fluid">
-                                    </div>
-                                    <div class="item active">
-                                        <img src="/landing-page/buddy-bounce-app.png" class="img-fluid">
-                                    </div>
-                                    <div class="item">
-                                        <img src="/landing-page/onit-app.png" class="img-fluid">
-                                    </div>
-                                    <div class="item">
-                                        <img src="/landing-page/sky-app.png" class="img-fluid">
-                                    </div>
-                                    <div class="item active">
-                                        <img src="/landing-page/buddy-bounce-app.png" class="img-fluid">
-                                    </div>
-                                    <div class="item">
-                                        <img src="/landing-page/onit-app.png" class="img-fluid">
-                                    </div>
+                                <div class="item active">
+                                    <img src="/landing-page/buddy-bounce-app.png" class="img-fluid">
+                                </div>
+                                <div class="item">
+                                    <img src="/landing-page/onit-app.png" class="img-fluid">
+                                </div>
+                                <div class="item">
+                                    <img src="/landing-page/sky-app.png" class="img-fluid">
+                                </div>
+                                <div class="item active">
+                                    <img src="/landing-page/buddy-bounce-app.png" class="img-fluid">
+                                </div>
+                                <div class="item">
+                                    <img src="/landing-page/onit-app.png" class="img-fluid">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-12 div-mobile overflow-hidden">
-                    <div class="d-inline-block d-block align-self-center">
-                            <div class="mockup-position">
-                                <img src="/landing-page/iphone-empty.png" class="img-fluid banner-wrapper">
-                                <div class="ag-slider-wrapper">
-                                    <div class="owl-carousel owl-theme owl-loaded">
-                                        <div class="item">
-                                            <img src="/landing-page/sky-app.png" class="img-fluid">
-                                        </div>
-                                        <div class="item active">
-                                            <img src="/landing-page/buddy-bounce-app.png" class="img-fluid">
-                                        </div>
-                                        <div class="item">
-                                            <img src="/landing-page/onit-app.png" class="img-fluid">
-                                        </div>
-                                        <div class="item">
-                                            <img src="/landing-page/sky-app.png" class="img-fluid">
-                                        </div>
-                                        <div class="item active">
-                                            <img src="/landing-page/buddy-bounce-app.png" class="img-fluid">
-                                        </div>
-                                        <div class="item">
-                                            <img src="/landing-page/onit-app.png" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-8 div-mobile">
-                    <center>                    <img src="/landing-page/omit-app-mockup.png" class="img-fluid w-50">
-                    </center>
-                </div> -->
             </div>
         </div>
     </div>
@@ -289,7 +241,7 @@
             stagePadding: 0,
             lazyLoad: true,
             loop: true,
-            dots: true,
+            dots: false,
             mouseDrag: true,
             touchDrag: true,
             responsive: {
