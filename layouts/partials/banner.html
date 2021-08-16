@@ -4,6 +4,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <style>
     .h-50 {
         height: 300px;
@@ -128,7 +136,6 @@
 
         width: 100% !important;
         /* height: auto; */
-
     }
 
     .ag-slider-wrapper {
@@ -139,30 +146,19 @@
         float: left;
     }
 
-
-    /* .mockup-position {
-    position: relative;
-    /* bottom: 160px; */
-    /* left: 10px; */
-    }
-
     .item {
-        position: absolute;
+        position: relative;
         width: fit-content;
         height: fit-content;
-        bottom: 200px;
         z-index: 4;
-        /* left: 100px; */
     }
 
     .empty-iphone {
         position: absolute;
-
-
     }
 </style>
 <!-- CSS only -->
-</script>
+
 <section class="banner">
     <div class="container">
         <div class="row">
@@ -172,29 +168,43 @@
             </div>
         </div>
         <div class="row">
-            <div class="">
+            <div>
                 <div class="col-sm-8 mt-5">
-                    <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
-                            customers are mobile</span></h3> </br>
-                    </br>
-                    <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
-                        responsive websites so that you can reach them
-                    </h1>
-                    </br>
-                    </br>
-                    <h2 class="text-white font-weight-bold pb-2">
-                        Welcome to iMobilize
+                    <div class="div-desktop">
+                        <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
+                                customers are mobile</span></h3> </br>
+                        </br>
+                        <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
+                            responsive websites so that you can reach them
+                        </h1>
+                        </br>
+                        </br>
+                        <h2 class="text-white font-weight-bold pb-2">
+                            Welcome to iMobilize
+                        </h2>
+                    </div>
+                    <div class="div-mobile">
+                        <h3 class="text-left text-white pb-2 mt-2 font-weight-bold mt-3"><span class="bg-warning">Your
+                                customers are mobile</span></h3> </br>
+                        </br>
+                        <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s why we create mobile apps and mobile
+                            responsive websites so that you can reach them
+                        </h1>
+                        </br>
+                        </br>
+                        <h2 class="text-white font-weight-bold pb-2">
+                            Welcome to iMobilize
+                        </h2>
+                    </div>
 
-                    </h2>
-                    </h1>
                     <div class="div-desktop pb-5">
 
-                        <a type="button" href="/enquiry-form/" class="btn btn-lg btn-outline-warning">ESTIMATE THE COST
+                        <a type="button" href="/enquiry-form/" class="btn btn-lg btn-warning">ESTIMATE THE COST
                             OF MY
                             PROJECT</a>
                     </div>
                     <div class="div-mobile mb-5">
-                        <a type="button" href="/enquiry-form/" class="btn btn-sm btn-outline-warning ">ESTIMATE THE
+                        <a type="button" href="/enquiry-form/" class="btn btn-sm btn-warning ">ESTIMATE THE
                             COST OF MY
                             PROJECT</a>
                     </div>
@@ -269,13 +279,8 @@
         </div>
     </div>
 </section>
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <script>
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
