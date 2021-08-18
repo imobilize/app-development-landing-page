@@ -31,6 +31,7 @@ export default function Wizardthankyou({ prevPage, ...props }) {
             }
             else if (comp_size === "1-10" && newUser === 0) {
                 setPoints(points = points + 1)
+                setNewUser(newUser = newUser + 1)
                 if (comp_touched === 0) {
                     setComp_touched(1)
                 }
@@ -117,9 +118,19 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
     const forNewUser = () => {
         return (
-            <strong>
-                Branding and creating a minimal viable product
-            </strong>
+            <div>
+                <strong>
+                    Branding and creating a minimal viable product
+                </strong>
+                <p className="text-left mt-3">We are happy to assist with that and we have put together something that you will love. It has helped many of our clients in the past save money and time on their projects. And most importantly, it helped grow their business exponentially.</p>
+                <a href="https://priceless-franklin-69214a.netlify.app">
+                    <button type="button" className="btn btn-outline-primary">
+                        I’M READY TO GROW MY BUSINESS
+                    </button>
+                </a>
+                <meta http-equiv="refresh" content="5;url=https://priceless-franklin-69214a.netlify.app" />
+            </div>
+
 
         )
     }
@@ -135,9 +146,18 @@ export default function Wizardthankyou({ prevPage, ...props }) {
         }
         else if (p >= 8) {
             return (
-                <strong>
-                    Creating a bolt on digital product to grow your business
-                </strong>
+                <div>
+                    <strong>
+                        Creating a bolt on digital product to grow your business
+                    </strong>
+                    <p className="text-left mt-3">We are happy to assist with that and we have put together something that you will love. It has helped many of our clients in the past save money and time on their projects. And most importantly, it helped grow their business exponentially.</p>
+                    <a href="https://calendly.com/imobilize">
+                        <button type="button" className="btn btn-outline-primary">
+                            BOOK A MEETING WITH US
+                        </button>
+                    </a>
+                </div>
+
             )
         }
     }
