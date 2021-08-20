@@ -1,10 +1,10 @@
-baseURL = "https://dazzling-lamarr-cc253c.netlify.app"
+baseURL = "https://mobile-app-development-company.com"
 languageCode = "en"
-title = "Imobilize"
+title = "Best Ios and Andriod App developers"
 theme = "hugo-initio"
 
  [params]
-  favicon = "landing-page/favicon.ico"
+  favicon = "/landing-page/favicon.ico"
 
 # [params]
 #     name = "Anthony Russel"

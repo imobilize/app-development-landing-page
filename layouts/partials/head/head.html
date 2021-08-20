@@ -1,3 +1,20 @@
+<meta charset="utf-8">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    
+    {{ template "_internal/schema.html" . }}
+  
+    {{ template "_internal/opengraph.html" . }}
+  
+    {{ template "_internal/twitter_cards.html" . }}
+  
+    {{ with .Keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+
+
+    {{ "<!-- mobile responsive meta -->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {{ with .Site.Params.author }}
+    <meta name="author" itemprop="author" content="{{ . }}">{{ end }}
+	
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
 
 <!-- Bootstrap -->

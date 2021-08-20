@@ -123,12 +123,12 @@ export default function Wizardthankyou({ prevPage, ...props }) {
                     Branding and creating a minimal viable product
                 </strong>
                 <p className="text-left mt-3">We are happy to assist with that and we have put together something that you will love. It has helped many of our clients in the past save money and time on their projects. And most importantly, it helped grow their business exponentially.</p>
-                <a href="https://priceless-franklin-69214a.netlify.app">
+                <a href="https://brandingforprofitbook.com/">
                     <button type="button" className="btn btn-outline-primary">
                         I’M READY TO GROW MY BUSINESS
                     </button>
                 </a>
-                <meta http-equiv="refresh" content="5;url=https://priceless-franklin-69214a.netlify.app" />
+                <meta http-equiv="refresh" content="5;url=https://brandingforprofitbook.com/" />
             </div>
 
 
