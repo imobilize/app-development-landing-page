@@ -1,6 +1,6 @@
 baseURL = "https://mobile-app-development-company.com"
 languageCode = "en"
-title = "Home - Imobilize"
+title = "iMobilize"
 theme = "hugo-initio"
 
  [params]
