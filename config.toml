@@ -1,6 +1,6 @@
-baseURL = "https://dazzling-lamarr-cc253c.netlify.app"
+baseURL = "https://mobile-app-development-company.com"
 languageCode = "en"
-title = "Imobilize"
+title = "Home - Imobilize"
 theme = "hugo-initio"
 
  [params]
