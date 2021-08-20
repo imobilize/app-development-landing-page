@@ -3,6 +3,9 @@ languageCode = "en"
 title = "Imobilize"
 theme = "hugo-initio"
 
+ [params]
+  favicon = "landing-page/favicon.ico"
+
 # [params]
 #     name = "Anthony Russel"
 #     description = "A mystery person"
