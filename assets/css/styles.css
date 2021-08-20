@@ -4,7 +4,7 @@ html {
 body {
   font-size: 15px;
   font-size: 0.9375rem;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: Montserrat!important;
   color: #666666;
   padding: 0;
 }
@@ -163,7 +163,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: Montserrat;
   font-weight: 400;
   color: #333333;
 }
@@ -408,7 +408,7 @@ img {
 }
 .featured h3 {
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Montserrat;
   font-size: 24px;
   font-size: 1.5rem;
   text-transform: uppercase;
