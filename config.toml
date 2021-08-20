@@ -4,7 +4,7 @@ title = "Home - Imobilize"
 theme = "hugo-initio"
 
  [params]
-  favicon = "landing-page/favicon.ico"
+  favicon = "/landing-page/favicon.ico"
 
 # [params]
 #     name = "Anthony Russel"
