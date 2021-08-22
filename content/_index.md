@@ -1,5 +1,5 @@
 ---
-title: "iMobilize"
+title: "Mobile App Development Company"
 date: 2021-08-20T15:28:43+06:00
 draft: false
 description: "iMobilize is a mobile app design and development studio based in London. Mobile apps and mobile optimised websites are our speciality."

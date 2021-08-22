@@ -2,5 +2,16 @@
 publish = "build"
 command = "npm run build && hugo -d build"
 
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
 [build.environment]
   HUGO_VERSION = "0.85.0"
