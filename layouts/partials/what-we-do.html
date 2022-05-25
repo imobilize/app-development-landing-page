@@ -1,391 +1,439 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
-    p {
-        font-size: 20px;
-    }
-
     li {
         font-size: 20px;
     }
-
+    
     .projects {
         position: relative;
         bottom: 160px;
     }
-
+    
     ul {
         display: table;
         margin: 0 auto;
     }
-
     /* !! mobile view button !! */
-
+    
     .example_ {
-   border-radius: 4px;
-   background: linear-gradient(to right, #FF882E, #FF882E) !important;
-   border: none;
-   color: #FFFFFF;
-   text-align: center;
-   text-transform: uppercase;
-   font-size: 16px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   padding-left: 10px;
-   padding-right: 10px;
-   width: fit-content;
-   transition: all 0.4s;
-   cursor: pointer;   
- }
-
-    #rocking {
-        animation: rocking 10s infinite ease;
-
+        border-radius: 4px;
+        background: linear-gradient(to right, #14286A, #14286A) !important;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        transition: all 0.4s;
+        cursor: pointer;
     }
-
-    @keyframes rocking {
-    0%, 100% { transform: rotate(-0.1deg); }
-    20% {transform:scale(.95);}
-    50% { transform: rotate(0.1deg); }
-    80% {transform:scale(.95);}
+    
+    .event {
+        margin: 50px auto;
+        text-align: center;
     }
-
-    .event{
-  margin:50px auto;
-  text-align:center;
-}
-
- .example_ span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.4s;
- }
- .example_ span:after {
-   content: '\00bb';
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   transition: 0.5s;
- }
-
- /* !! mobile view button end !! */
-
-
+    
+    .example_ span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s;
+    }
+    
+    .example_ span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        transition: 0.5s;
+    }
+    /* !! mobile view button end !! */
+    
     .example_f {
-   border-radius: 4px;
-   background: linear-gradient(to right, #FF882E, #FF882E) !important;
-   border: none;
-   color: #FFFFFF;
-   text-align: center;
-   text-transform: uppercase;
-   font-size: 22px;
-   padding-top: 15px;
+        border-radius: 4px;
+        background: linear-gradient(to right, #14286A, #14286A) !important;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        /* padding-top: 15px;
    padding-bottom: 15px;
    padding-left: 10px;
-   padding-right: 10px;
-   width: 200px;
-   transition: all 0.4s;
-   cursor: pointer;
-   margin: 5px;
- }
-
-    #rocking {
-        animation: rocking 10s infinite ease;
-
+   padding-right: 10px; */
+        width: 200px;
+        transition: all 0.4s;
+        cursor: pointer;
+        margin: 5px;
     }
-
-    @keyframes rocking {
-    0%, 100% { transform: rotate(-0.1deg); }
-    20% {transform:scale(.95);}
-    50% { transform: rotate(0.1deg); }
-    80% {transform:scale(.95);}
+    
+    .event {
+        margin: 50px auto;
+        text-align: center;
     }
-
-    .event{
-  margin:50px auto;
-  text-align:center;
-}
-
- .example_f span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.4s;
- }
- .example_f span:after {
-   content: '\00bb';
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   right: -20px;
-   transition: 0.5s;
- }
- .example_f:hover span {
-   padding-right: 25px;
- }
- .example_f:hover span:after {
-   opacity: 1;
-   right: 0;
- }
- .circle-bg {
-  height: 80px;
-  width: 80px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  z-index: 1
-}
- .icon-img {
-     position: relative;
-     z-index: 2
- }
-
+    
+    .example_f span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s;
+    }
+    
+    .example_f span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .example_f:hover span {
+        padding-right: 25px;
+    }
+    
+    .example_f:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 </style>
 <section class="pt-5">
     <div class="container div-desktop">
         <div class="row">
-            <div class="d-flex align-items-center">
-                <div class="col-md-6 p-3">
-                    <h1 class="text-center pt-2 font-weight-bold">What we do</h1>
-                    <ul class="p-3 text-left">
-                        <li> Graphic Design UX / UI </li>
-                        </br>
-                        <li>Branding and Logos
-                        </li>
-                        </br>
-                        <li>Mobile App Development
-                        </li>
-                        </br>
-                        <li>Mobile Responsive Websites
-                        </li>
-                        </br>
-                        <li>Mobile app commerce
-                        </li>
-                        </br>
-                        <li>Content Management Web Portals
-                        </li>
-                        </br>
-                        <li>Saas (Software As A Service) products</li>
-                        </br>
-                        <li>Social Media Marketing (Organic Content)</li>
-                        </br>
-                        <li>Social Media Advertising (PPC)
-                        </li>
-                        </br>
-                        <li>Digital Marketing Strategy
-                        </li>
-                        </br>
-                        <li>Business Consultation
-                        </li>
-                        </br>
-                        <li>Growth Hacking
-                        </li>
-                        </br>
-                    </ul>
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-
-
-                </div>
-                <div class="col-md-6 mt-5">
-                    <img src="landing-page/projects.png" alt="Andriod and Ios app created and developed by iMobilize" class="img-fluid h-20 mt-5 pt-5 pr-5 projects">
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h1 class="p-5 text-center font-weight-bold">What Makes Us Different To Other Digital Agencies
-                </h1>
-                <p class="text-center font-weight-bolder p-3 ml-5 mr-5">
-                    Unlike other App Development companies, we actually create our own digital products too. Our
-                    knowledge of digital product development comes from years of experience doing it for ourselves. We
-                    then use our expertise of what works to help others.</br>
-                    </br>
-                    This usually means we are in high demand. We choose to only work on a select few projects at a time.
-                    We would love to hear about your project and see if this is something we can help you with.
-                    </br>
-                    </br>
-                </p>
-                <div class="container pt-5 div-desktop">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/mobile-development.png" alt="Andriod and Ios mobile app created and developed by iMobilize" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h6 class="p-3 text-center font-weight-bold">Mobile Development</h6>
-                            <p class="p-3 text-center">Get professional support from the mobile team at every stage of development.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/ios.png" alt="Ios mobile apps created and developed by iMobilize" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h6 class="p-3 text-center font-weight-bold">IOS Development</h6>
-                            <p class="p-3 text-center">Develop top-quality iOS apps with cutting edge technology.
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/andriod.png" alt="Andriod mobile apps created and developed by iMobilize" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h6 class="p-3 text-center font-weight-bold">Andriod Development</h6>
-                            <p class="p-3 text-center">Building beautiful and scalable mobile applications with top performance using the Java and Kotlin programming languages.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/flutter.png" alt="Flutter mobile apps created and developed by iMobilize" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h6 class="p-3 text-center font-weight-bold">Flutter Development</h6>
-
-                            <p class="p-3 text-center">Take your idea to the next stage and accelerate your product's go-to-market with Flutter development.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-5 div-desktop">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-                <div class="mt-5 pb-5 div-mobile">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container div-mobile">
-        <div class="row">
             <div class="col-md-12 p-3">
-                <h1 class="p-3 font-weight-bold text-center">What we do</h1>
-                <ul class="p-3 text-left">
-                    <li> Graphic Design UX / UI </li>
-                    </br>
-                    <li>Branding and Logos
-                    </li>
-                    </br>
-                    <li>Mobile App Development
-                    </li>
-                    </br>
-                    <li>Mobile Responsive Websites
-                    </li>
-                    </br>
-                    <li>Mobile app commerce
-                    </li>
-                    </br>
-                    <li>Content Management Web Portals
-                    </li>
-                    </br>
-                    <li>Saas (Software As A Service) products</li>
-                    </br>
-                    <li>Social Media Marketing (Organic Content)</li>
-                    </br>
-                    <li>Social Media Advertising (PPC)
-                    </li>
-                    </br>
-                    <li>Digital Marketing Strategy
-                    </li>
-                    </br>
-                    <li>Business Consultation
-                    </li>
-                    </br>
-                    <li>Growth Hacking
-                    </li>
-                    </br>
-                </ul>
-                <div class="pt-3"></div>
-                <div class="mb-5">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-
+                <h1 class="text-center pt-2 font-weight-bold">What we do</h1>
             </div>
-            <div class="col-md-12 pt-3">
-                <center>
-                    <img src="landing-page/projects.png" alt="Ios and Andirod app created and developed by iMobilize" class="img-fluid w-75">
-                </center>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h1 class=" mb-5 mt-5 text-center font-weight-bold">What Makes Us Different To Other Digital Agencies
-                </h1>
-                <p class="text-center p-3">
-                    Unlike other App Development companies, we actually create our own digital products too. Our
-                    knowledge of digital product development comes from years of experience doing it for ourselves. We
-                    then use our expertise of what works to help others.</br>
-                    </br>
-                    This usually means we are in high demand. We choose to only work on a select few projects at a time.
-                    We would love to hear about your project and see if this is something we can help you with.
-                    </br>
-                    </br>
-                </p>
-                <div class="container pt-5">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/mobile-development.png" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h4 class="p-3 text-center font-weight-bold">Mobile Development</h4>
-                            <p class="p-3 text-center">Get professional support from the mobile team at every stage of development.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/ios.png" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h4 class="p-3 text-center font-weight-bold">IOS Development</h4>
-                            <p class="p-3 text-center">Develop top-quality iOS apps with cutting edge technology.
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/andriod.png" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h4 class="p-3 text-center font-weight-bold">Andriod Development</h4>
-                            <p class="p-3 text-center">Building beautiful and scalable mobile applications with top performance using the Java and Kotlin programming languages.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="circle-bg">
-                                    <img src="/landing-page/flutter.png" class="img-fluid icon-img">
-                                </div>
-                            </div>
-                            <h4 class="p-3 text-center font-weight-bold">Flutter Development</h4>
-
-                            <p class="p-3 text-center">Take your idea to the next stage and accelerate your product's go-to-market with Flutter development.</p>
-                        </div>
+            <div class="row text-center">
+                <div class="col-12 d-inline-flex justify-content-between">
+                    <div>
+                        <img class="img-fluid" src="/images/artist.png" alt="">
+                        <p>Grapic Design <br>UX/UI Design</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/feather.png" alt="">
+                        <p>Branding and <br>Logos</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/left_curly_bracket (1).png" alt="">
+                        <p>Mobile App <br>Development</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/mobile.png" alt="">
+                        <p>Mobile Responsive <br>Websites</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/laptop.png" alt="">
+                        <p>Mobile App <br>Commerce</p>
                     </div>
                 </div>
-                <div class="p-5 div-desktop">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 d-inline-flex justify-content-between">
+                    <div>
+                        <img class="img-fluid" src="/images/computer.png" alt="">
+                        <p>Content Management <br> Web Portals</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/tablet.png" alt="">
+                        <p>Sass Products <br> (Software As A Service)</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/instagram.png" alt="">
+                        <p>Social Media Marketing <br>(Organic Content)</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/follow_me.png" alt="">
+                        <p>Social Media Advertising <br> (PPC)</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/images/light_bulb.png" alt="">
+                        <p>Digital Marketing <br>Strategy</p>
+                    </div>
                 </div>
-                <div class="mb-5 mt-5 div-mobile">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
+            </div>
+            <div class="third-row">
+                <div class="row text-center">
+                    <div class="col-12 d-inline-flex justify-content-evenly">
+                        <div>
+                            <img src="/images/call_center.png" alt="">
+                            <p>Business Consultation</p>
+                        </div>
+                        <div>
+                            <img src="/images/statistics.png" alt="">
+                            <p>Growth Hacking</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<div class="container div-desktop">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h1 class="p-5 text-center font-weight-bold">What Makes Us Different To Other Digital Agencies?
+
+            </h1>
+            <p class="text-center font-weight-bolder p-3 ms-5 me-5">
+                Unlike other App Development companies, we actually create our own digital products too. Our knowledge of digital product development comes from years of experience doing it for ourselves. We then use our expertise of what works to help others.</br>
+                </br>
+                This usually means we are in high demand. We choose to only work on a select few projects at a time. We would love to hear about your project and see if this is something we can help you with.
+                </br>
+                </br>
+            </p>
+        </div>
+        <div class="container pt-5 div-desktop">
+            <!-- <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="card text-center py-4">
+                                <div>
+                                    <img src="/images/development.png" alt="Andriod and Ios mobile app created and developed by iMobilize" class="img-fluid icon-img">
+                                </div>
+                                <h4 class="p-4 text-center font-weight-bold">Mobile <br> Development</h4>
+                                <p class="p-3 text-center">Get professional support from the mobile team at every stage of development.</p>
+                             </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-flex justify-content-center">
+                                <div class="card text-center py-4">
+                                <div>
+                                    <img src="/images/iphone.png" alt="Ios mobile apps created and developed by iMobilize" class="img-fluid icon-img">
+                                </div>
+                                <h4 class="p-3 text-center font-weight-bold">IOS <br>Development</h4>
+                                <p class="p-4 text-center pb-4">Develop top-quality iOS apps with cutting edge technology.
+                                </p>    
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="card text-center py-3">
+                                <div>
+                                    <img src="/images/applications.png" alt="Andriod mobile apps created and developed by iMobilize" class="img-fluid icon-img">
+                                </div>
+                                <h4 class="p-3 text-center font-weight-bold">Andriod <br> Development</h4>
+                                <p class="p-1 text-center">Building beautiful and scalable mobile applications with top performance using the Java and Kotlin programming languages.</p> <br>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="card text-center py-3">
+                                <div>
+                                    <img src="/images/flag.png" alt="Flutter mobile apps created and developed by iMobilize" class="img-fluid icon-img">
+                                </div>
+                                <h4 class="p-3 text-center font-weight-bold">Flutter <br> Development</h4>
+                                
+                                <p class="p-3 text-center">Take your idea to the next stage and accelerate your product's go-to-market with Flutter development.</p>
+                            </div>
+                            </div>
+                    </div>
+                </div> -->
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center py-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/development.png" class="img-fluid icon-img w-50 ms-3" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title py-3">Mobile <br> Development</h4>
+                            <p class="card-text">Get professional support from the mobile team at every stage of development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center py-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/iphone.png" class="card-img-top w-50" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title py-3">IOS <br>Development</h4>
+                            <p class="card-text">Develop top-quality iOS apps with cutting edge technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center py-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/applications.png" class="card-img-top w-50 ms-5" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title py-3">Andriod<br>Development</h4>
+                            <p class="card-text">Building beautiful and scalable mobile applications with top performance using the Java and Kotlin programming languages..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center py-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/flag.png" class="card-img-top w-50 ms-5" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title py-3">Flutter <br> Development</h4>
+                            <p class="card-text">Take your idea to the next stage and accelerate your product's go-to-market with Flutter development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 div-desktop">
+            <center>
+                <div class="button_cont"><a class="example_f px-3 py-3" href="#"><span>Estimate the cost of my project</span></a></div>
+            </center>
+        </div>
+        <div class="mt-5 pb-5 div-mobile">
+            <center>
+                <div class="button_cont"><a class="example_ px-3 py-4" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>
+            </center>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container div-mobile">
+    <div class="row">
+        <div class="col-md-12 p-3">
+            <h1 class="p-3 font-weight-bold text-center">What we do</h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-6 d-inline-flex justify-content-evenly">
+                <div>
+                    <img class="img-fluid" src="/images/artist.png" alt="">
+                    <p>Grapic Design <br>UX/UI Design</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="/images/feather.png" alt="">
+                    <p>Branding and <br>Logos</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-6 d-inline-flex justify-content-evenly ">
+                <div>
+                    <img class="img-fluid" src="/images/left_curly_bracket (1).png" alt="">
+                    <p>Mobile App <br>Development</p>
+                </div>
+                <div class="ms-2">
+                    <img class="img-fluid" src="/images/mobile.png" alt="">
+                    <p>Mobile <br> Responsive <br>Websites</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-6 d-inline-flex justify-content-evenly">
+                <div>
+                    <img class="img-fluid" src="/images/laptop.png" alt="">
+                    <p>Mobile App <br>Commerce</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="/images/computer.png" alt="">
+                    <p>Content <br> Management <br> Web Portals</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-12 d-inline-flex justify-content-evenly">
+                <div>
+                    <img class="img-fluid" src="/images/tablet.png" alt="">
+                    <p>Sass <br> Products <br> (Software As A Service)</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="/images/instagram.png" alt="">
+                    <p>Social Media Marketing <br>(Organic Content)</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-12 d-inline-flex justify-content-evenly">
+                <div>
+                    <img class="img-fluid" src="/images/follow_me.png" alt="">
+                    <p>Social Media Advertising <br> (PPC)</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="/images/light_bulb.png" alt="">
+                    <p>Digital Marketing <br>Strategy</p>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <div class="row text-center">
+                <div class="col-12 d-inline-flex justify-content-evenly">
+                    <div>
+                        <img src="/images/call_center.png" alt="">
+                        <p>Business Consultation</p>
+                    </div>
+                    <div>
+                        <img src="/images/statistics.png" alt="">
+                        <p>Growth Hacking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pt-5 div-mobile">
+    <div class="row row-cols-1 row-cols-md-1 g-4">
+        <div class="col">
+            <div class="card h-100 text-center py-5">
+                <div class="d-flex justify-content-center">
+                    <img src="images/development.png" class="img-fluid icon-img w-50 ms-3" alt="...">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title py-3">Mobile <br> Development</h4>
+                    <p class="card-text">Get professional support from the mobile team at every stage of development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center py-5">
+                <div class="d-flex justify-content-center">
+                    <img src="images/iphone.png" class="card-img-top w-50" alt="...">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title py-3">IOS <br>Development</h4>
+                    <p class="card-text">Develop top-quality iOS apps with cutting edge technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center py-5">
+                <div class="d-flex justify-content-center">
+                    <img src="images/applications.png" class="card-img-top w-50 ms-5" alt="...">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title py-3">Andriod<br>Development</h4>
+                    <p class="card-text">Building beautiful and scalable mobile applications with top performance using the Java and Kotlin programming languages..</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center py-5">
+                <div class="d-flex justify-content-center">
+                    <img src="images/flag.png" class="card-img-top w-50 ms-5" alt="...">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title py-3">Flutter <br> Development</h4>
+                    <p class="card-text">Take your idea to the next stage and accelerate your product's go-to-market with Flutter development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-5 mt-5 div-mobile">
+    <center>
+        <div class="button_cont"><a class=" example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>
+    </center>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section>
     <div class="container">

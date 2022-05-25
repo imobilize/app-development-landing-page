@@ -2,11 +2,9 @@ html {
   font-size: 100%;
 }
 body {
-  font-size: 15px;
-  font-size: 0.9375rem;
-  font-family: Montserrat!important;
-  color: #666666;
-  padding: 0;
+    background-color: #e5e5e5 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000 !important;
 }
 .topspace {
   margin-top: 40px;
@@ -163,9 +161,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Montserrat;
-  font-weight: 400;
-  color: #333333;
+  /* font-family: Montserrat; */
+  font-weight: 800;
+  color: #000000;
 }
 
 @media screen and (max-width: 1024px)

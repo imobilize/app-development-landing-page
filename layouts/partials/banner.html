@@ -20,7 +20,7 @@
     }
 
     .banner {
-        background-image: url("/landing-page/header-bg.png");
+        /* background-image: url("/landing-page/header-bg.png"); */
         width: 100%;
         height: fit-content;
         background-position: center;
@@ -28,9 +28,7 @@
         background-size: cover;
         position: relative;
         z-index: 1;
-
     }
-
     .banner-mockup {
         position: relative;
         width: 65%;
@@ -81,6 +79,7 @@
     @media screen and (max-width: 740px) {
         h1 {
         font-size: 24px !important;
+        font-weight: 600 !important;
   }
 
     h2 {
@@ -158,33 +157,21 @@
     
     .example_f {
    border-radius: 4px;
-   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   background: linear-gradient(to right, #14286A, #14286A) !important;
    border: none;
    color: #FFFFFF;
    text-align: center;
    text-transform: uppercase;
    font-size: 22px;
-   padding-top: 15px;
+   /* padding-top: 15px;
    padding-bottom: 15px;
    padding-left: 10px;
-   padding-right: 10px;
+   padding-right: 10px; */
    width: fit-content;
    transition: all 0.4s;
    cursor: pointer;
    margin: 5px;
  }
-
-    #rocking {
-        animation: rocking 10s infinite ease;
-
-    }
-
-    @keyframes rocking {
-    0%, 100% { transform: rotate(-0.1deg); }
-    20% {transform:scale(.95);}
-    50% { transform: rotate(0.1deg); }
-    80% {transform:scale(.95);}
-    }
 
     .event{
   margin:50px auto;
@@ -215,7 +202,7 @@
 
  .example_ {
    border-radius: 4px;
-   background: linear-gradient(to right, #FF882E, #FF882E) !important;
+   background: linear-gradient(to right, #14286A, #14286A) !important;
    border: none;
    color: #FFFFFF;
    text-align: center;
@@ -229,18 +216,6 @@
    transition: all 0.4s;
    cursor: pointer;   
  }
-
-    #rocking {
-        animation: rocking 10s infinite ease;
-
-    }
-
-    @keyframes rocking {
-    0%, 100% { transform: rotate(-0.1deg); }
-    20% {transform:scale(.95);}
-    50% { transform: rotate(0.1deg); }
-    80% {transform:scale(.95);}
-    }
 
     .event{
   margin:50px auto;
@@ -261,136 +236,63 @@
    transition: 0.5s;
  }
 .bg-orange {
-    color: #FF882E
-}
-h1 {
-    font-family: Montserrat;
-}
-h2 {
-    font-family: Montserrat;
-}
-h3 {
-    font-family: Montserrat;
-}
-h4 { font-family: Montserrat;
-}
-h5 { font-family: Montserrat;
-}
-h6 {font-family: Montserrat;
-}
-p { font-family: Montserrat;
+    color: #14286A
 }
 
-span { font-family: Montserrat; }
 
 
 </style>
 <!-- CSS only -->
 
 <section class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 p-3">
-                <img src="landing-page/imobilize-logo.png" alt="Best App development Company logo" width="50%" class="img-fluid">
-            </div>
-        </div>
+    <div class="container div-desktop">
         <div class="row">
             <div class="col-md-7 mt-5">
-                <div class="div-desktop">
-                    <h3 class="text-left text-white mt-2 font-weight-bold mt-3 text-uppercase">Your
-                            customers are <span class="bg-orange">mobile</span></h3> </br>
-                    </br>
-                    <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s Why We Create Mobile Apps and Mobile
-                        Responsive Websites So That You Can Reach Them
+                <div>
+                    <h1 class="font-weight-bold mt-5 mb-2"> That’s Why We So you need to talk about your business online?
                     </h1>
                     </br>
                     </br>
-                    <h2 class="text-white font-weight-bold pb-2">
-                        Welcome to iMobilize
+                    <h2 class="font-weight-bold pb-2">
+                        Don't Worry We Can Help You!
                     </h2>
                 </div>
-                <div class="div-mobile">
-                    <h3 class="text-left text-white pb-2 mt-3 text-uppercase">Your
-                            customers are <span class="bg-orange">mobile</span></h3> </br>
-                    </br>
-                    <h1 class="text-white font-weight-bold mt-2 mb-2"> That’s Why We Create Mobile Apps and Mobile
-                        Responsive Websites So That You Can Reach Them
-                    </h1>
-                    </br>
-                    </br>
-                    <h2 class="text-white font-weight-bold pb-2">
-                        Welcome to iMobilize
-                    </h2>
-                </div>
-
                 <div class="div-desktop pb-5 mt-5">
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                </div>
-
-                <div class="div-mobile mb-5 mt-5">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
+                    <div class="button_cont"><a class="example_f px-3 py-3" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
             </div>
-            <div class="col-md-5">
-                <div class="d-flex justify-content-end">
-                    <div class="m-auto">
-                        <div class="ag-slider-wrapper">
-                            <div class="empty-iphone">
-                                <img src="/landing-page/iphone-empty.png" alt="iPhone Ios development" class="banner-wrapper">
-                            </div>
-                            <div class="owl-carousel owl-theme">
-                                <div class="item">
-                                    <img src="/landing-page/sky-app.png" alt="Sky Go App created and developed by iMobilize" class="img-fluid">
-                                </div>
-                                <div class="item active">
-                                    <img src="/landing-page/buddy-bounce-app.png" alt="Buddy bounce App created and developed by iMobilize" class="img-fluid">
-                                </div>
-                                <div class="item">
-                                    <img src="/landing-page/onit-app.png" alt="Onit App created and developed by iMobilize" class="img-fluid">
-                                </div>
-                                <div class="item">
-                                    <img src="/landing-page/sky-app.png" alt="Sky Go App created and developed by iMobilize" class="img-fluid">
-                                </div>
-                                <div class="item active">
-                                    <img src="/landing-page/buddy-bounce-app.png" alt="Buddy bounce App created and developed by iMobilize" class="img-fluid">
-                                </div>
-                                <div class="item">
-                                    <img src="/landing-page/onit-app.png" alt="Onit App created and developed by iMobilize" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+            </div>
+                <div class="col-md-5 mt-5">
+                    <div class="hero">
+                    <img src="images/think.png" alt="" class="img-fluid w-75 position-relative" style="z-index: 1;right: -25px;">
+                    <div class="child_1">
+                        <img src="images/Group.png" alt="" class="img-fluid">
                     </div>
+                    <!-- <div class="child_2"><img src="images/Vector3.png" alt="" class="img-fluid"></div>
+                    <div class="child_3"><img src="images/Vector4.png" alt="" class=""></div> -->
                 </div>
-            </div>
+                </div>
         </div>
     </div>
+    
+                <div class="container div-mobile">
+                <div class="col-md-12 mt-5">
+                    <div>
+                        <h1 class="text-center font-weight-bold mt-2 mb-2"> That’s Why We So you need to talk about your business online?
+                        </h1>
+                        </br>
+                        </br>
+                        <h2 class="text-black text-center font-weight-bold pb-2">
+                            Don't Worry We Can Help You!
+                        </h2>
+                        <div class="div-mobile mb-5 mt-5">
+                            <center>
+                                <div class="button_cont"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
+                            </center>
+                        </div>
+                    </div>
+                    </div>
+
+               
+            
+                </div>
 </section>
-
-
-<script>
-    $(document).ready(function () {
-        $('.owl-carousel').owlCarousel({
-            items: 1,
-            autoplay: true,
-            stagePadding: 0,
-            lazyLoad: true,
-            loop: true,
-            dots: false,
-            mouseDrag: true,
-            touchDrag: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-    })
-</script>

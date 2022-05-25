@@ -1,312 +1,368 @@
 <style>
+    /* !! mobile view button !! */
 
-        /* !! mobile view button !! */
-
-        .example_ {
-   border-radius: 4px;
-   background: linear-gradient(to right, #FF882E, #FF882E) !important;
-   border: none;
-   color: #FFFFFF;
-   text-align: center;
-   text-transform: uppercase;
-   font-size: 16px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   padding-left: 10px;
-   padding-right: 10px;
-   width: fit-content;
-   transition: all 0.4s;
-   cursor: pointer;   
- }
-
-    #rocking {
-        animation: rocking 10s infinite ease;
-
+    .example_ {
+        border-radius: 4px;
+        background: linear-gradient(to right, #14286A, #14286A) !important;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        transition: all 0.4s;
+        cursor: pointer;
     }
 
-    @keyframes rocking {
-    0%, 100% { transform: rotate(-0.1deg); }
-    20% {transform:scale(.95);}
-    50% { transform: rotate(0.1deg); }
-    80% {transform:scale(.95);}
+
+
+    .event {
+        margin: 50px auto;
+        text-align: center;
     }
 
-    .event{
-  margin:50px auto;
-  text-align:center;
-}
+    .example_ span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s;
+    }
 
- .example_ span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.4s;
- }
- .example_ span:after {
-   content: '\00bb';
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   transition: 0.5s;
- }
+    .example_ span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        transition: 0.5s;
+    }
 
- /* !! mobile view button end !! */
+    /* !! mobile view button end !! */
 
     .example_f {
-   border-radius: 4px;
-   background: linear-gradient(to right, #FF882E, #FF882E) !important;
-   border: none;
-   color: #FFFFFF;
-   text-align: center;
-   text-transform: uppercase;
-   font-size: 22px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   padding-left: 10px;
-   padding-right: 10px;
-   width: 200px;
-   transition: all 0.4s;
-   cursor: pointer;
-   margin: 5px;
- }
-
-    #rocking {
-        animation: rocking 10s infinite ease;
-
+        border-radius: 4px;
+        background: linear-gradient(to right, #14286A, #14286A) !important;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        /* padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px; */
+        width: 200px;
+        transition: all 0.4s;
+        cursor: pointer;
+        margin: 5px;
     }
 
-    @keyframes rocking {
-    0%, 100% { transform: rotate(-0.1deg); }
-    20% {transform:scale(.95);}
-    50% { transform: rotate(0.1deg); }
-    80% {transform:scale(.95);}
+
+    .event {
+        margin: 50px auto;
+        text-align: center;
     }
 
-    .event{
-  margin:50px auto;
-  text-align:center;
-}
+    .example_f span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s;
+    }
 
- .example_f span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.4s;
- }
- .example_f span:after {
-   content: '\00bb';
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   right: -20px;
-   transition: 0.5s;
- }
- .example_f:hover span {
-   padding-right: 25px;
- }
- .example_f:hover span:after {
-   opacity: 1;
-   right: 0;
- }
+    .example_f span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .example_f:hover span {
+        padding-right: 25px;
+    }
+
+    .example_f:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+     .sky_go {
+        background-color: #4E84A5 !important;
+        color: #fff;
+    }
+
+     .buddy_bounce {
+        background-color: #E0A83B !important;
+        color: #fff;
+    }
+        .on_it {
+        background: #50BDA8 !important;
+        color: #fff;
+    }
 
 
+     .fit_freaks {
+        background: #F38585 !important;
+        color: #fff;
+    }
 
+        /* #last .btn {
+            background-color: #14286A;
+            padding: 10px 10px;
+            width: 230px;
+            height: 56px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-size: 20px;
+        } */
+
+    #last h4 {
+        padding-bottom: 10px;
+    }
+
+    #last h1 {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+     h5 {
+        color: #fff;
+    }
+    .btn {
+        background-color: #14286A;
+        /* padding: 10px 50px; */
+        /* width: 230px;
+        height: 56px; */
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .div-mobile .card {
+        text-align: center;
+    }
 </style>
-<section>
-    <div class="container bg-light div-desktop">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center font-weight-bold p-5">
-                    A Small Selection Of Our Projects
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="landing-page/sovryn-mockup.png" alt="Sovryn Website developed by iMobilize" class="img-fluid">
-            </div>
-            <div class="col-md-6 pt-5">
-                <h1 class="text-center p-3 font-weight-bold">Sovryn</h1>
-                <p class="text-center"> A cryptocurrency trading platform. iMobilize was hired to revamp the website in order to make it more engaging, user friendly and mobile optimised
-                </p>
-                <div class="p-5 div-desktop">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-                <div class="mt-5 mb-5 div-mobile">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-6 pt-5">
-                <h1 class="text-center p-3 font-weight-bold">Buddy Bounce</h1>
-                <p class="text-center">
-                    Social media app for music artists. iMobilize built the iOS app that launched Buddy Bounce’s startup journey
-                </p>
-                <div class="p-5 div-desktop">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-                <div class="mt-5 mb-5 div-mobile">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex justify-content-center">
-                    <img src="landing-page/buddy-bounce.png" alt="buddy bounce app created by iMobilize" class="img-fluid w-50">
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <div class="d-flex justify-content-center">
-                    <img src="landing-page/sky-go.png" alt="sky go app developed by iMobilize" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-6 mt-5">
-                <h1 class="text-center p-3 font-weight-bold">SKY GO</h1>
-                <p class="text-center">
-                    Watch live TV and on demand content on your mobile device. iMobilize helped to build the biggest OTT platform in the UK even before Netflix became popular.             
-                </p>
-                <div class="p-5 div-desktop">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-                <div class="mt-5 mb-5 div-mobile">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-6 pt-5">
-                <h1 class="text-center p-3 font-weight-bold">Fit Freaks</h1>
-                <p class="text-center">
-                    The on demand fitness app - iMobilize developed the iOS and Android version of the smash hit Fit In 5 workout series. We also designed and built the websites and handled the social media marketing                  </p>
-                <div class="p-5 div-desktop">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-                <div class="mt-5 mb-5 div-mobile">
-                    <center>
-                        <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                    </center>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex justify-content-center">
-                    <img src="landing-page/fitfreaks-mockup.png" alt="Fit Freaks app and website created and developed by iMobilize" class="img-fluid w-75">
-                </div>
-            </div>
+<section id="last">
+    <div class="container">
+        <div class="row text-center">
+            <h1>Why You Should Be Mobile</h1>
         </div>
     </div>
-    <div class="container div-mobile">
-        <div class="bg-light">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center font-weight-bold p-5">
-                        A Small Selection Of Our Projects
-                    </h1>
-                </div>
+    <div class="container div-desktop">
+        <!-- <div class="row g-4">
+            <div class="">
+        <div class="card-group">
+            <div class="card">
+              <img src="images/Group10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SKY GO</h5>
+                <p class="card-text">Watch live TV and on demand content on your mobile device. iMobilize helped to build the
+                    biggest OTT platform in the UK even before Netflix bacame popular.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="landing-page/sovryn-mockup.png" alt="Sovryn Website developed by iMobilize" class="img-fluid">
-                </div>
-                <div class="col-md-6 pt-5">
-                    <h1 class="text-center p-3 font-weight-bold">Sovryn</h1>
-                    <p class="text-center"> A cryptocurrency trading platform. iMobilize was hired to revamp the website in order to make it more engaging, user friendly and mobile optimised
-                    </p>
-                    <div class="p-5 div-desktop">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                    <div class="mt-5 mb-5 div-mobile">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                </div>
+            <div class="card">
+              <img src="images/Group9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Buddy Bounce</h5>
+                <p class="card-text">Social media app for music artists. iMobilize built the iOS app that launched Buddy Bounce's
+                    startup journey.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center">
-                        <img src="landing-page/buddy-bounce.png" alt="buddy bounce app created by iMobilize" class="img-fluid w-50">
-                    </div>
-                </div>
-                <div class="col-md-6 pt-5">
-                    <h1 class="text-center p-3 font-weight-bold">Buddy Bounce</h1>
-                    <p class="text-center">
-                        Social media app for music artists. iMobilize built the iOS app that launched Buddy Bounce’s startup journey
-                    </p>
-                    <div class="p-5 div-desktop">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                    <div class="mt-5 mb-5 div-mobile">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                </div>
+            <div class="card">
+              <img src="images/Group10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Onit</h5>
+                <p class="card-text">A mobile app which gives the user to find event and promotions close to a user's location.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center">
-                        <img src="landing-page/sky-go.png" alt="Sky Go app created by iMobilize" class="img-fluid">
-                    </div>
+            <div class="card">
+                <img src="images/Group10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fit Freaks</h5>
+                  <p class="card-text">The on demand fitness app - iMobilize developed the iOS and Andriod version of the smash hit fit
+                    In 5 workout series. We alos designed and built the websites and handled the social media
+                    marketing.</p>
                 </div>
-                <div class="col-md-6">
-                    <h1 class="text-center p-3 font-weight-bold">SKY GO</h1>
-                    <p class="text-center">
-                        Watch live TV and on demand content on your mobile device. iMobilize helped to build the biggest OTT platform in the UK even before Netflix became popular.             
-                    </p>
-                    <div class="p-5 div-desktop">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                    <div class="mt-5 mb-5 div-mobile">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center">
-                        <img src="landing-page/fitfreaks-mockup.png" alt="Fit Freaks app and website created and developed by iMobilize" class="img-fluid w-75">
-                    </div>
-                </div>
-                <div class="col-md-6 pt-5">
-                    <h1 class="text-center p-3 font-weight-bold">Fit Freaks</h1>
-                    <p class="text-center">
-                        The on demand fitness app - iMobilize developed the iOS and Android version of the smash hit Fit In 5 workout series. We also designed and built the websites and handled the social media marketing                  </p>
-                    <div class="p-5 div-desktop">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_f" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                    <div class="mt-5 mb-5 div-mobile">
-                        <center>
-                            <div class="button_cont" id="rocking"><a class="example_" href="/enquiry-form" target="_blank" rel="nofollow"><span>Estimate the cost of my project</span></a></div>        
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
     </div>
+        </div> -->
+        <div class="row row-cols-1 row-cols-md-4 g-3 my-5">
+            <div class="col">
+              <div class="card h-100 sky_go">
+                <img src="images/Group8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SKY GO</h5>
+                  <p class="card-text">Watch live TV and on demand content on your mobile device. iMobilize helped to build the
+                      biggest OTT platform in the UK even before Netflix bacame popular.</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+                </div>
+              </div>
+              </div>
+            <div class="col">
+              <div class="card h-100 buddy_bounce">
+                <img src="images/Group9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buddy Bounce</h5>
+                  <p class="card-text">Social media app for music artists. iMobilize built the iOS app that launched Buddy Bounce's
+                      startup journey.</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+                    </div>
+              </div>
+              </div>
+            <div class="col">
+              <div class="card h-100 on_it">
+                <img src="images/Group10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Onit</h5>
+                <p class="card-text">A mobile app which gives the user to find event and promotions close to a user's location.</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+                </div>
+                </div>
+              </div>
+            <div class="col">
+                <div class="card h-100 fit_freaks">
+                    <img src="images/Group10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Fit Freaks</h5>
+                    <p class="card-text">The on demand fitness app - iMobilize developed the iOS and Andriod version of the smash hit fit
+                        In 5 workout series. We alos designed and built the websites and handled the social media
+                        marketing.</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>    
 </section>
+    <div class="container div-mobile">
+    <div class="row row-cols-1 row-cols-md-1 g-3 my-5">
+        <div class="col">
+          <div class="card h-100 sky_go">
+            <img src="images/Group8.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SKY GO</h5>
+              <p class="card-text">Watch live TV and on demand content on your mobile device. iMobilize helped to build the
+                  biggest OTT platform in the UK even before Netflix bacame popular.</p>
+            </div>
+            <div class="d-flex justify-content-center">
+            <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+            </div>
+          </div>
+          </div>
+        <div class="col">
+          <div class="card h-100 buddy_bounce">
+            <img src="images/Group9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Buddy Bounce</h5>
+              <p class="card-text">Social media app for music artists. iMobilize built the iOS app that launched Buddy Bounce's
+                  startup journey.</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+                </div>
+          </div>
+          </div>
+        <div class="col">
+          <div class="card h-100 on_it">
+            <img src="images/Group10.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Onit</h5>
+            <p class="card-text">A mobile app which gives the user to find event and promotions close to a user's location.</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+            </div>
+            </div>
+          </div>
+        <div class="col">
+            <div class="card h-100 fit_freaks">
+                <img src="images/Group10.png" class="card-img-top img-fluid w-100" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fit Freaks</h5>
+                <p class="card-text">The on demand fitness app - iMobilize developed the iOS and Andriod version of the smash hit fit
+                    In 5 workout series. We alos designed and built the websites and handled the social media
+                    marketing.</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="btn btn-primary text-center px-5 py-2">View Project</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>  
+<!-- <div class="container pt-5 div-mobile">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card text-center sky_go">
+                <img src="images/Group8.png" class="card-img-top" alt="...">
+                <div class="card-body text-white">
+                    <h4 class="card-title text-white">SKY GO</h4>
+                    <p class="card-text">Watch live TV and on demand content on your mobile device. iMobilize helped to
+                        build the biggest OTT platform in the UK even before Netflix bacame popular.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center mt-4 buddy_bounce">
+                <img src="images/Group9.png" class="card-img-top" alt="...">
+                <div class="card-body text-white">
+                    <h4 class="card-title text-white">Buddy Bounce</h4>
+                    <p class="card-text">Social media app for music artists. iMobilize built the iOS app that launched
+                        Buddy Bounce's startup journey</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center my-4 on_it">
+                <img src="images/Group10.png" class="card-img-top" alt="...">
+                <div class="card-body text-white">
+                    <h4 class="card-title text-white">Onit</h4>
+                    <p class="card-text">A mobile app which gives the user to find event and promotions close to a
+                        user's location.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center fit_freaks">
+                <img src="images/Group10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-white">Fit Freaks</h4>
+                    <p class="card-text text-white">The on demand fitness app - iMobilize developed the iOS and Andriod
+                        version of the smash hit fit In 5 workout series. We alos designed and built the websites and
+                        handled the social media marketing</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
