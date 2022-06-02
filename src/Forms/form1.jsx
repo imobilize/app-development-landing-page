@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useMultipleForm } from "usetheform";
 import WizardFormFirstPage from "./wizardform1";
-import WizardFormSecondPage from "./wizardform2";
-import WizardFormThirdPage from './wizardform3';
+// import WizardFormSecondPage from "./wizardform2";
+// import WizardFormThirdPage from './wizardform3';
 import WizardThankYou from './wizardthankyou';
-import Page2 from './page2'
-import Page3 from './page3';
+// import Page2 from './page2'
+// import Page3 from './page3';
 import axios from 'axios';
 
 
