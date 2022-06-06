@@ -102,18 +102,7 @@ export default function Page3({ prevPage, ...props }) {
                             </div>
                         </div>
 
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div className="form-group mb-3">
-                                    <label className="control-label col-sm-6 mb-1 form-label">
-                                        Tell us about your project <span>*</span>
-                                    </label>
-                                    <div className="col-sm-12 col-md-12 col-lg-12 ">
-                                        <TextArea rows="3" cols="1" required={true} type="text" className="form-control" name="project_Details" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
 

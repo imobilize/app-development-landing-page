@@ -13,6 +13,7 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
     const { width, height } = useWindowSize()
 
+    const dataLayerEvent = {'event': 'new_lead'}
 
     const pointsys = () => {
         const comp_size = props.company_Size
@@ -128,7 +129,6 @@ export default function Wizardthankyou({ prevPage, ...props }) {
                         I’M READY TO GROW MY BUSINESS
                     </button>
                 </a>
-                <meta http-equiv="refresh" content="5;url=https://brandingforprofitbook.com/" />
             </div>
 
 
@@ -162,12 +162,16 @@ export default function Wizardthankyou({ prevPage, ...props }) {
         }
     }
 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(dataLayerEvent);
+
     return (
         <div className="container">
             <Header />
+
             <div className="p-3">
 
-                {
+                {     
                     comp_touched === 0 && funds_tounched === 0 && budget_tounched === 0
                         ?
                         pointsys()
