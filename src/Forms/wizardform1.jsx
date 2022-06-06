@@ -33,10 +33,10 @@ export default function WizardFormFirstPage(props) {
             </div>
                 <div class="col-md-5 mt-5">
                     <div class="hero">
-                    <img src="images/think.png" alt="" class="img-fluid w-75 position-relative" />
+                    {/* <img src="images/think.png" alt="" class="img-fluid w-75 position-relative" />
                     <div class="child_1">
                         <img src="images/Group.png" alt="" class="img-fluid" />
-                    </div>
+                    </div> */}
                     {/* <!-- <div class="child_2"><img src="images/Vector3.png" alt="" class="img-fluid"></div>
                     <div class="child_3"><img src="images/Vector4.png" alt="" class=""></div> --> */}
                 </div>
