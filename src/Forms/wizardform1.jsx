@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Input, TextArea } from "usetheform";
-import Header from "./header";
+// import Header from "./header";
 import think from "../images/think.png";
 import Group from "../images/Group.png";
 import "../styles/main.scss"
@@ -111,20 +111,20 @@ export default function WizardFormFirstPage(props) {
                     <Form>
                     <div class="row">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control my-2 p-3 border" placeholder="First name" aria-label="First name"/>
+                            <Input type="text" class="form-control my-2 p-3 border" placeholder="Name" required={true} name="first_Name" aria-label="First name"/>
                         </div>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control border my-2 p-3" placeholder="Last name" aria-label="Last name"/>
+                            <Input type="email" class="form-control border my-2 p-3" placeholder="Email" required={true} name="email" aria-label="email"/>
                         </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                            <input type="text" class="form-control border my-2 p-3" placeholder="Subject" aria-label="Subject"/>
+                            <Input type="email" class="form-control border my-2 p-3" placeholder="Subject" aria-label="Subject" name="Subject"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                            <TextArea name="message" id="message" cols="7" rows="10" placeholder="Your Message" className="form-control border my-2 p-3" />
+                            <TextArea name="project_Details" id="message" cols="7" rows="10" placeholder="Your Message" className="form-control border my-2 p-3" />
                             </div>
                         </div>
                         <div className="row d-flex justify-content-center">
