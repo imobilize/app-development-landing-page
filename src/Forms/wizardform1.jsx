@@ -129,7 +129,7 @@ export default function WizardFormFirstPage(props) {
                         </div>
                         <div className="row d-flex justify-content-center">
                             <div className="col-lg-4">
-                                <button type="button" className="btn1 my-4">Submit Form</button>
+                                <button type="button" className="btn1 my-4"><a href="/enquiry-form" className="btn1 my-4" target="_blank" rel="nofollow">Submit Form</a></button>
                                 </div> 
                         </div>
                     </Form>

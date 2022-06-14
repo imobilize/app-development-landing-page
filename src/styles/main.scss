@@ -129,10 +129,11 @@ h1,h2,h3,h4,h5,h6, .btn {
     height: 50px;
     width: 100%;
     background-color: #14286A;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     border-radius: 10px;
     font-weight: bold;
     font-size: 22px;
+    text-decoration: none !important;
 }
 .border {
     border-radius: 20px !important;
