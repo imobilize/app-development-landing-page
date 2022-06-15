@@ -14,17 +14,15 @@ export default function Form1() {
     const [currentPage, setPage] = useState(1);
     const [res, setRes] = useState();
     const [getWizardState, wizard] = useMultipleForm();
-    // const nextPage = () => setPage((prev) => ++prev);
-    // const prevPage = () => setPage((prev) => --prev);
 
     const onSubmitWizard = () => {
 
 
         axios.post("https://sheet.best/api/sheets/d6fa6b1c-a455-43f7-99e2-f638c8747c02", getWizardState())
 
-        .then(response => {
-            setRes(response.status);
-        })
+            .then(response => {
+                setRes(response.status);
+            })
 
         console.log(getWizardState(), res)
     }
@@ -38,38 +36,27 @@ export default function Form1() {
 
 
 
-    return ( 
-    <div> 
-        {
-            currentPage === 1 && ( 
-            <WizardFormFirstPage {...wizard }
-                onSubmit = { onSubmitWizard }/>
-            )
-        }
+    return (
+        <div>
+            {
+                currentPage === 1 && (
+                    <WizardFormFirstPage {...wizard}
+                        onSubmit={onSubmitWizard} />
+                )
+            }
 
-        {
-            /* 
-                        {currentPage === 5 && (
-                            <WizardFormSecondPage
-                                {...wizard}
-                                prevPage={prevPage}
-                                onSubmit={onSubmitWizard}
-                            />
-                        )} */
-        }
+            {
+                currentPage === 2 && (
 
-        {
-            currentPage === 2 && (
+                    <WizardThankYou {...getWizardState()} />
+                )
+            }
 
-                <WizardThankYou {...getWizardState() }/>
-            )
-        }
-
-        {
-            res === 200 && currentPage === 1 ?
-                fun() :
-                null
-        } 
+            {
+                res === 200 && currentPage === 1 ?
+                    fun() :
+                    null
+            }
         </div>
-        )
-    }
+    )
+}

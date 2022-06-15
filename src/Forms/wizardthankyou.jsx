@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
-import Header from './header'
 import "../styles/main.scss"
 
 export default function Wizardthankyou({ prevPage, ...props }) {
@@ -13,7 +12,7 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
     const { width, height } = useWindowSize()
 
-    const dataLayerEvent = {'event': 'new_lead'}
+    const dataLayerEvent = { 'event': 'new_lead' }
 
     const pointsys = () => {
         const comp_size = props.company_Size
@@ -167,11 +166,10 @@ export default function Wizardthankyou({ prevPage, ...props }) {
 
     return (
         <div className="container">
-            <Header />
 
             <div className="p-3">
 
-                {     
+                {
                     comp_touched === 0 && funds_tounched === 0 && budget_tounched === 0
                         ?
                         pointsys()
